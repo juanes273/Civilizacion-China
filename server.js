@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Conexión a la base de datos de MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/Civilizaciones', {
+mongoose.connect('mongodb+srv://brandjuan:nDV1dZYmQCH7bbq4@civilizacion-china.p8tyooj.mongodb.net/CivilizacionesDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
