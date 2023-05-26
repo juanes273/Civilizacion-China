@@ -7,8 +7,8 @@ const router = Router();
 
 //Solicitudes de tipo GET
 router.get('/users', async(req,res)=>{
-    const users = await User.find();
-    res.send(users)
+    //const users = await User.find();
+    res.send("Funciona")
 })
 
 export default router;
