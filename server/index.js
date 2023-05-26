@@ -8,6 +8,8 @@ import routes from "./src/routes/proyecto.js";
 
 const app = express();
 
+mongoose.set('strictQuery', false);
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
