@@ -21,7 +21,7 @@ const port = process.env.PORT || 5000;
 
 const server = http.createServer(app);
 
-mongoose.connect('mongodb://0.0.0.0:27017/Civilizaciones').then(() => {
+mongoose.connect('mongodb+srv://brandjuan:nDV1dZYmQCH7bbq4@civilizacion-china.p8tyooj.mongodb.net/CivilizacionesDB').then(() => {
   console.log("Mongodb connected");
   server.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
@@ -30,6 +30,11 @@ mongoose.connect('mongodb://0.0.0.0:27017/Civilizaciones').then(() => {
   console.log({ err });
   process.exit(1);
 });
+
+app.get('/users', async(req,res)=>{
+  const users = await User.find();
+  res.send(users)
+})
 
 export default app;
 
