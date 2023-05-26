@@ -32,10 +32,6 @@ mongoose.connect('mongodb+srv://brandjuan:nDV1dZYmQCH7bbq4@civilizacion-china.p8
   process.exit(1);
 });
 
-app.get('/users', async(req,res)=>{
-  const users = await User.find();
-  res.send(users)
-})
 
 export default app;
 
