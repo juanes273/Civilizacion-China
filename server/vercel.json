@@ -1,11 +1,14 @@
 {
     "version": 2,
     "builds": [
-      { "src": "server/app.js", "use": "@vercel/node" }
+      { "src": "server/src/app.js", "use": "@vercel/node" }
     ],
     "routes": [
-      { "src": "/api/.*", "dest": "server/app.js" },
-      { "src": "/(.*)", "dest": "server/app.js" }
-    ]
+      { "src": "/api/.*", "dest": "server/routes/proyecto.js" },
+      { "src": "/(.*)", "dest": "server/src/app.js" }
+    ],
+    "env": {
+      "MONGODB_URI": "mongodb+srv://brandjuan:nDV1dZYmQCH7bbq4@civilizacion-china.p8tyooj.mongodb.net/CivilizacionesDB"
+    }
   }
   
