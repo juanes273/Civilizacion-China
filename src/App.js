@@ -9,7 +9,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/login', { email, password });
+      const response = await axios.post('https://civilizacion-china.vercel.app/api/login', { email, password });
       setMessage(response.data.message);
     } catch (error) {
       setMessage('Error en el inicio de sesión');
