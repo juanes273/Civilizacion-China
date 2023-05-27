@@ -8,8 +8,8 @@ export default function Welcome(props) {
   const { nodes, materials, animations } = useGLTF("/static/TerracotaSoldier.glb");
   const { actions } = useAnimations(animations, group);
   const resize = 20
-  const handleMoveUp = () => {
-    setPositionY(positionY + 10); // Increment the position by 1 unit
+  const moveUp = () => {
+    group.current.position.y += 20; // Ajusta el valor según la distancia de movimiento deseada
   };
   return (
     <group>
