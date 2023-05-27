@@ -62,7 +62,7 @@ export default function Experience() {
       <PointerLockControls ref={controlsRef} />
 
       <directionalLight position={[1, 2, 3]} intensity={1.5} />
-      <ambientLight intensity={7} />
+      <ambientLight intensity={0.5} />
 
       <TerracotaSoldier />
       <Welcome />

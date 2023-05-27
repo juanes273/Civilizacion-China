@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { TextureLoader } from "three";
 import TerracotaSoldier from './TerracotaSoldier';
-import Wall from './Wall'
-import Floor from './Floor'
 import { Text } from '@react-three/drei'
 import { Float } from '@react-three/drei'
 
