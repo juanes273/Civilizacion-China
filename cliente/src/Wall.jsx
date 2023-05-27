@@ -1,7 +1,7 @@
 import { useTexture } from "@react-three/drei";
 import { DoubleSide } from "three";
 
-export default function Floor() {
+export default function Wall() {
     const PATH = "/static/Wall/Wood_Wall_002_SD/"
     
     const props = useTexture({
