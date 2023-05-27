@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { TextureLoader } from "three";
 import TerracotaSoldier from './TerracotaSoldier';
+import Wall from './Wall'
+import Floor from './Floor'
 import { Text } from '@react-three/drei'
 import { Float } from '@react-three/drei'
 
@@ -22,29 +24,29 @@ export default function Welcome(props) {
       <TerracotaSoldier />
       <mesh position-y={0} rotation-x={- Math.PI * 0.5} scale={resize}>
         <planeGeometry />
-        <meshStandardMaterial map={piso} />
+        <meshStandardMaterial map={Floor} />
       </mesh>
       <mesh position-y={resize * 0.25} position-z={-resize * 0.5} scale={[resize, resize * 0.5, resize]}>
         <planeGeometry />
-        <meshStandardMaterial map={pared} />
+        <meshStandardMaterial map={Wall} />
       </mesh>
       <mesh position-y={resize * 0.25} position-z={resize * 0.5} scale={[resize, resize * 0.5, resize]} rotation-x={-Math.PI}>
         <planeGeometry />
-        <meshStandardMaterial map={pared} />
+        <meshStandardMaterial map={Wall} />
       </mesh>
       <mesh position-y={resize * 0.25} position-x={-resize * 0.5} scale={[resize, resize * 0.5, resize]} rotation-y={Math.PI * 0.5}>
         <planeGeometry />
-        <meshStandardMaterial map={pared} />
+        <meshStandardMaterial map={Wall} />
       </mesh>
 
       <mesh position-y={resize * 0.25} position-x={resize * 0.5} position-z={resize * 0.25} scale={[resize * 0.5, resize * 0.5, resize]} rotation-y={-Math.PI * 0.5}>
         <planeGeometry />
-        <meshStandardMaterial map={pared}/>
+        <meshStandardMaterial map={Wall}/>
       </mesh>
 
       <mesh position-y={resize * 0.25} position-x={resize * 0.5} position-z={-resize * 0.25} scale={[resize * 0.5, resize * 0.5, resize]} rotation-y={-Math.PI * 0.5}>
         <planeGeometry />
-        <meshStandardMaterial map={pared} />
+        <meshStandardMaterial map={Wall} />
       </mesh>
       <Float speed={0}>
         <Text
@@ -63,6 +65,8 @@ export default function Welcome(props) {
           Bienvenido a la civilizacion china
         </Text>
       </Float>
+      <Wall/>
+      <Floor/>
     </group>
   );
 }

@@ -2,7 +2,7 @@ import { useTexture } from "@react-three/drei";
 import { DoubleSide } from "three";
 
 export default function Floor() {
-    const PATH = "/static/Floor/Tatami_001_SD"
+    const PATH = "/static/Floor/Tatami_001_SD/"
     
     const props = useTexture({
         map: PATH + 'Tatami_001_.basecolorjpg',
