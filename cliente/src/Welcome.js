@@ -9,7 +9,7 @@ export default function Welcome(props) {
   const { actions } = useAnimations(animations, group);
   const resize = 20
   const moveUp = () => {
-    group.current.position.y += 20; // Ajusta el valor según la distancia de movimiento deseada
+    group.current.position.z += 20; // Ajusta el valor según la distancia de movimiento deseada
   };
   return (
     <group>
