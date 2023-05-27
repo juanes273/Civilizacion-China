@@ -2,7 +2,7 @@ import { PointerLockControls } from '@react-three/drei';
 import { useFrame, useThree, useEventListener } from "@react-three/fiber";
 import { Perf } from 'r3f-perf';
 import Model from './Model';
-import Fox from './Fox';
+import TerracotaSoldier from './TerracotaSoldier';
 import Welcome from './Welcome';
 import React, { useState, useRef, useEffect } from 'react';
 
@@ -64,7 +64,7 @@ export default function Experience() {
       <directionalLight position={[1, 2, 3]} intensity={1.5} />
       <ambientLight intensity={0.5} />
 
-      <Fox />
+      <TerracotaSoldier />
       <Welcome />
     </>
   );
