@@ -11,7 +11,7 @@ export default function Welcome(props) {
 
   return (
     <group>
-      <mesh position-y={props.positionY} rotation-x={- Math.PI * 0.5} scale={resize}>
+      <mesh position-y={20} rotation-x={- Math.PI * 0.5} scale={resize}>
         <planeGeometry />
         <meshStandardMaterial color="greenyellow" />
       </mesh>
