@@ -19,8 +19,7 @@ export default function TerracotaSoldier(props) {
             geometry={nodes.defaultMaterial_1.geometry}
             material={materials.None}
           />
-          <mesh position-y={12} scale={resize}>
-            <planeGeometry />
+          <mesh position-y={12}>
           </mesh>
         </group>
       </group>
