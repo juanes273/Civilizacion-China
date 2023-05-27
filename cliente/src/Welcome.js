@@ -18,10 +18,9 @@ export default function Welcome(props) {
   
   return (
     <group>
-      <mesh position-y={12} scale={resize}>
-        <planeGeometry />
-      </mesh>
-      <TerracotaSoldier />
+      <TerracotaSoldier 
+      position-y={12}
+      />
       <mesh position-y={0} rotation-x={- Math.PI * 0.5} scale={resize}>
         <planeGeometry />
         <meshStandardMaterial map={Floor} />
@@ -60,7 +59,7 @@ export default function Welcome(props) {
           
           <mesh position={[0, 0, -0.01]}>
             <planeGeometry args={[8, 2]}/>
-            <meshBasicMaterial color="white" transparent opacity={0.8} />
+            <meshBasicMaterial color="white" transparent opacity={0} />
           </mesh>
           Bienvenido a la civilizacion china
         </Text>
