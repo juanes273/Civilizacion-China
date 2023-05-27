@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
-import { TextureLoader } from "three";
 import TerracotaSoldier from './TerracotaSoldier';
 import Wall from './Wall'
 import Floor from './Floor'
@@ -12,15 +11,9 @@ export default function Welcome(props) {
   const { nodes, materials, animations } = useGLTF("/static/TerracotaSoldier.glb");
   const { actions } = useAnimations(animations, group);
   const resize = 20
-  const textureLoader = new TextureLoader();
-  const pared = textureLoader.load("cliente/public/static/Wall/Wood_Wall_002_SD/Wood_Wall_002_basecolor.jpg");
-  const piso = textureLoader.load("cliente/public/static/Floor/Tatami_001_SD/Tatami_001_basecolor.jpg");
-  
+
   return (
     <group>
-      <TerracotaSoldier 
-      position-y={12}
-      />
       <mesh position-y={0} rotation-x={- Math.PI * 0.5} scale={resize}>
         <planeGeometry />
         <meshStandardMaterial map={Floor} />
@@ -66,6 +59,7 @@ export default function Welcome(props) {
       </Float>
       <Wall/>
       <Floor/>
+      <TerracotaSoldier/>
     </group>
   );
 }
