@@ -58,4 +58,4 @@ export default function Welcome(props) {
   );
 }
 
-useGLTF.preload("/static/Fox.glb");
+useGLTF.preload("/static/TerracotaSoldier.glb");
