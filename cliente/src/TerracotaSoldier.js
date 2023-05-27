@@ -6,7 +6,7 @@ export default function TerracotaSoldier(props) {
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, -Math.PI+ -Math.PI / 5] } scale={2}>
-        <group rotation={[Math.PI / 2, 0, 0]}>
+        <group rotation={[Math.PI / 2, 5, 0]}>
           <mesh
             castShadow
             receiveShadow
