@@ -52,7 +52,7 @@ export default function Welcome(props) {
           font="./bangers-v20-latin-regular.woff"
           fontSize={0.5}
           color="Black"
-          position-y={3.2}
+          position-y={6.2}
           maxWidth={5}
           textAlign="center"
         >
