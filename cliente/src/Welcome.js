@@ -11,8 +11,13 @@ export default function Welcome(props) {
   const { actions } = useAnimations(animations, group);
   const resize = 20
   const textureLoader = new TextureLoader();
-  const pared = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Wood_Wall_002_basecolor.jpg");
-  const piso = textureLoader.load("/static/Floor/Tatami_001_SD/Tatami_001_basecolor.jpg");
+  const pared = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Wood_Wall_002_basecolor.jpg", (texture) => {
+    console.log("Textura de pared cargada correctamente", texture);
+  });
+  const piso = textureLoader.load("/static/Floor/Tatami_001_SD/Tatami_001_basecolor.jpg", (texture) => {
+    console.log("Textura de piso cargada correctamente", texture);
+  });
+  
   
   return (
     <group>
