@@ -11,15 +11,11 @@ export default function Welcome(props) {
   const { actions } = useAnimations(animations, group);
   const resize = 20
   const textureLoader = new TextureLoader();
-  const pared = textureLoader.load("cliente/public/static/Wall/Wood_Wall_002_SD/Wood_Wall_002_basecolor.jpg");
-  const piso = textureLoader.load("cliente/public/static/Floor/Tatami_001_SD/Tatami_001_basecolor.jpg");
+  const pared = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Wood_Wall_002_basecolor.jpg");
+  const piso = textureLoader.load("/static/Floor/Tatami_001_SD/Tatami_001_basecolor.jpg");
   
   return (
     <group>
-      <mesh position-y={12} scale={resize}>
-        <planeGeometry />
-      </mesh>
-      <TerracotaSoldier />
       <mesh position-y={0} rotation-x={- Math.PI * 0.5} scale={resize}>
         <planeGeometry />
         <meshStandardMaterial map={piso} />
@@ -63,6 +59,7 @@ export default function Welcome(props) {
           Bienvenido a la civilizacion china
         </Text>
       </Float>
+      <TerracotaSoldier />
     </group>
   );
 }
