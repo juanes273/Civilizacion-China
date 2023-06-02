@@ -17,37 +17,69 @@ export default function Welcome(props) {
   const piso = textureLoader.load("/static/Floor/Tatami_001_SD/Tatami_001_basecolor.jpg", (texture) => {
     console.log("Textura de piso cargada correctamente", texture);
   });
+  const puerta = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Wood_Door_002_basecolor.jpg", (texture) => {
+    console.log("Textura de pared cargada correctamente", texture);
+  });
+  const techo = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Stylized_Thatched_Roof_002_basecolor.jpg", (texture) => {
+    console.log("Textura de pared cargada correctamente", texture);
+  });
   
   
   return (
     <group>
-      <mesh position-y={0} rotation-x={- Math.PI * 0.5} scale={resize}>
-        <planeGeometry />
+      <mesh position-y={0} position-x={resize} rotation-x={- Math.PI * 0.5} >
+        <boxGeometry args={[resize*3,resize,0.01]} />
         <meshStandardMaterial map={piso} />
       </mesh>
-      <mesh position-y={resize * 0.25} position-z={-resize * 0.5} scale={[resize, resize * 0.5, resize]}>
-        <planeGeometry />
+      <mesh position-y={resize/2} position-x={resize} rotation-x={- Math.PI * 0.5} >
+        <boxGeometry args={[resize*3,resize,0.01]} />
+        <meshStandardMaterial map={techo} />
+      </mesh>
+      <mesh position-y={resize * 0.25} position-z={-resize * 0.5} >
+        <boxGeometry args={[resize,resize*0.5,0.01]} />
         <meshStandardMaterial map={pared} />
       </mesh>
-      <mesh position-y={resize * 0.25} position-z={resize * 0.5} scale={[resize, resize * 0.5, resize]} rotation-x={-Math.PI}>
-        <planeGeometry />
+      <mesh position-y={resize * 0.25} position-z={resize * 0.5}  rotation-x={-Math.PI}>
+        <boxGeometry args={[resize,resize*0.5,0.01]}  />
         <meshStandardMaterial map={pared} />
       </mesh>
-      <mesh position-y={resize * 0.25} position-x={-resize * 0.5} scale={[resize, resize * 0.5, resize]} rotation-y={Math.PI * 0.5}>
-        <planeGeometry />
+      <mesh position-y={resize * 0.25} position-x={-resize * 0.5} rotation-y={Math.PI * 0.5}>
+        <boxGeometry args={[resize,resize*0.5,0.01]}  />
         <meshStandardMaterial map={pared} />
       </mesh>
 
-      <mesh position-y={resize * 0.25} position-x={resize * 0.5} position-z={resize * 0.25} scale={[resize * 0.5, resize * 0.5, resize]} rotation-y={-Math.PI * 0.5}>
-        <planeGeometry />
-        <meshStandardMaterial map={pared}/>
+      <mesh  position={[resize * 0.5,resize * 0.25,resize*0.5 ]} rotation={[0,Math.PI * 0.07 ,0]}>
+        <boxGeometry  args={[resize,resize*0.5,0.01]}  />
+        <meshStandardMaterial map={puerta} />
+      </mesh>
+      <mesh position={[resize*0.5,resize * 0.25,-resize * 0.5]} rotation={[0,-Math.PI * 0.07,0]}>
+        <boxGeometry args={[resize,resize*0.5,0.01]}  />
+        <meshStandardMaterial map={puerta} />
       </mesh>
 
-      <mesh position-y={resize * 0.25} position-x={resize * 0.5} position-z={-resize * 0.25} scale={[resize * 0.5, resize * 0.5, resize]} rotation-y={-Math.PI * 0.5}>
-        <planeGeometry />
+      
+      <mesh position={[resize,resize * 0.25,-resize * 0.5]} >
+        <boxGeometry args={[resize,resize*0.5,0.01]} />
         <meshStandardMaterial map={pared} />
       </mesh>
-      <Float speed={0}>
+      <mesh position={[resize,resize * 0.25,resize * 0.5]} >
+        <boxGeometry args={[resize,resize*0.5,0.01]} />
+        <meshStandardMaterial map={pared} />
+      </mesh>
+      <mesh position={[resize*2,resize * 0.25,-resize * 0.5]} >
+        <boxGeometry args={[resize,resize*0.5,0.01]} />
+        <meshStandardMaterial map={pared} />
+      </mesh>
+      <mesh position={[resize*2,resize * 0.25,resize * 0.5]} >
+        <boxGeometry args={[resize,resize*0.5,0.01]} />
+        <meshStandardMaterial map={pared} />
+      </mesh>
+      <mesh position={[resize*3,0,0]} rotation-x={- Math.PI * 0.5} >
+        <boxGeometry args={[resize,resize*5,0.01]} />
+      </mesh>
+      
+      <mesh scale={1.2} rotation-y={-Math.PI*0.8} position={[resize*0.4,0,-resize*0.2]}>
+      <Float speed={0} >
         <Text
           font="./bangers-v20-latin-regular.woff"
           fontSize={0.5}
@@ -55,16 +87,20 @@ export default function Welcome(props) {
           position-y={6.2}
           maxWidth={5}
           textAlign="center"
+          rotation={[0,Math.PI*0.5,0]}
+          
         >
           
           <mesh position={[0, 0, -0.01]}>
-            <planeGeometry args={[8, 2]}/>
+            <boxGeometry args={[8, 2,0.01]}/>
             <meshBasicMaterial color="white" transparent opacity={0.8} />
           </mesh>
+          
           Bienvenido a la civilizacion china
         </Text>
       </Float>
-      <TerracotaSoldier />
+      <TerracotaSoldier position-y={2}/>
+      </mesh>
     </group>
   );
 }
