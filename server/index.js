@@ -19,6 +19,7 @@ app.use("/api/", routes);
 
 const port = process.env.PORT || 5000;
 
+app.use(cors());
 const server = http.createServer(app);
 
 mongoose.connect('mongodb+srv://brandjuan:nDV1dZYmQCH7bbq4@civilizacion-china.p8tyooj.mongodb.net/CivilizacionesDB').then(() => {

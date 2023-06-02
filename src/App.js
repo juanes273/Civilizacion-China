@@ -6,13 +6,17 @@ function App() {
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
 
+  const instance = axios.create({
+    baseURL: 'http://localhost:5000'
+  });
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://civilizacion-china-backend.vercel.app/api/users', { email, password });
+      const response = await instance.post('/api/users', { email, password });
       setMessage(response.data.message);
     } catch (error) {
-      setMessage('Error en el inicio de sesión');
+      console.log(error);
     }
   };
 
