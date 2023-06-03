@@ -79,7 +79,6 @@ export default function Welcome(props) {
       <mesh scale={1.2} rotation-y={-Math.PI*0.8} position={[resize*0.4,0,-resize*0.2]}>
       <Float speed={0} >
         <Text
-          font="./bangers-v20-latin-regular.woff"
           fontSize={0.5}
           color="Black"
           position-y={6.2}

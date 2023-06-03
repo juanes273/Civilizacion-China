@@ -1,4 +1,4 @@
-import { PointerLockControls } from '@react-three/drei';
+import { PointerLockControls, Sky } from '@react-three/drei';
 import { useFrame, useThree, useEventListener } from "@react-three/fiber";
 import { Perf } from 'r3f-perf';
 import Model from './Model';
@@ -73,6 +73,7 @@ export default function Experience() {
       <directionalLight position={[1, 2, 3]} intensity={1.5} />
       <ambientLight intensity={0.5} />
 
+      <Sky/>
       <Welcome/>
       <Plaza/>
 
