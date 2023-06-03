@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function TerracotaSoldier(props) {
-  const { nodes, materials } = useGLTF("./static/TerracotaSoldier.glb");
+  const { nodes, materials } = useGLTF(" ./static/TerracotaSoldier.glb");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, Math.PI+ Math.PI / 2.5] } scale={2}>

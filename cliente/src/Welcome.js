@@ -12,16 +12,16 @@ export default function Welcome(props) {
   const resize = 20
   const textureLoader = new TextureLoader();
   const pared = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Wood_Wall_002_basecolor.jpg", (texture) => {
-    console.log("Textura de pared cargada correctamente", texture);
+    // console.log("Textura de pared cargada correctamente", texture);
   });
   const piso = textureLoader.load("/static/Floor/Tatami_001_SD/Tatami_001_basecolor.jpg", (texture) => {
-    console.log("Textura de piso cargada correctamente", texture);
+    // console.log("Textura de piso cargada correctamente", texture);
   });
   const puerta = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Wood_Door_002_basecolor.jpg", (texture) => {
-    console.log("Textura de pared cargada correctamente", texture);
+    // console.log("Textura de pared cargada correctamente", texture);
   });
   const techo = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Stylized_Thatched_Roof_002_basecolor.jpg", (texture) => {
-    console.log("Textura de pared cargada correctamente", texture);
+    // console.log("Textura de pared cargada correctamente", texture);
   });
   
   
@@ -74,9 +74,7 @@ export default function Welcome(props) {
         <boxGeometry args={[resize,resize*0.5,0.01]} />
         <meshStandardMaterial map={pared} />
       </mesh>
-      <mesh position={[resize*3,0,0]} rotation-x={- Math.PI * 0.5} >
-        <boxGeometry args={[resize,resize*5,0.01]} />
-      </mesh>
+      
       
       <mesh scale={1.2} rotation-y={-Math.PI*0.8} position={[resize*0.4,0,-resize*0.2]}>
       <Float speed={0} >
@@ -104,5 +102,3 @@ export default function Welcome(props) {
     </group>
   );
 }
-
-useGLTF.preload("/static/TerracotaSoldier.glb");
