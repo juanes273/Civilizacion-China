@@ -7,7 +7,7 @@ import Welcome from './Welcome';
 import Plaza from './Plaza';
 import React, { useState, useRef, useEffect } from 'react';
 
-export default function Experience() {
+export default function Experience(props) {
   const controlsRef = useRef(null);
   const [movement, setMovement] = useState({
     forward: false,
@@ -74,9 +74,8 @@ export default function Experience() {
       <ambientLight intensity={0.5} />
 
       <Sky/>
-      <Welcome/>
-      <Plaza/>
-
+      <Welcome changeScene={props.changeScene} />
+      <Plaza changeScene={props.changeScene} /> {/* Pasar la función changeScene como una prop a Plaza */}
     </>
   );
 }

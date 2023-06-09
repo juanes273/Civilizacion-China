@@ -2,7 +2,7 @@ import React from 'react';
 
 function Scene2({ changeScene }) {
   const handleClick = () => {
-    changeScene('scene1');
+    changeScene('sceneWelcome');
   };
 
   return (

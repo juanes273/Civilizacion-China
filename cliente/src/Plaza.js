@@ -6,10 +6,12 @@ import Soldado from './soldadoTerracota';
 import { MeshStandardMaterial } from 'three'; // Importa el material MeshStandardMaterial
 
 
-export default function Plaza() {
+export default function Plaza({changeScene}) {
   const group = useRef();
   const resize = 20
-  
+  const handleClick = () => {
+    changeScene('scene1');
+  };
   const PATHPP = "/static/PisoPlaza/"
   const props = useTexture({
       map: PATHPP + 'Substance_Graph_Height.jpg',
@@ -211,6 +213,10 @@ export default function Plaza() {
     <mesh position={[resize*9.5,0,0 ]} rotation={[0,Math.PI*0.5,0]} >
         <boxGeometry args={[resize*7,resize,0.01]} />
         <meshStandardMaterial color={"yellow"} />
+    </mesh>
+    <mesh onClick={handleClick}>
+      <boxBufferGeometry args={[1, 2, 0.1]} />
+      <meshBasicMaterial color="green" />
     </mesh>
     {/* estatuas */}
     {/* fila 1 */}
