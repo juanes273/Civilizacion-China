@@ -2,15 +2,16 @@ import React from 'react';
 
 function Scene1({ changeScene }) {
   const handleClick = () => {
-    changeScene('scene2');
+    changeScene('sceneWelcome');
   };
 
   return (
     <mesh onClick={handleClick}>
-      <boxBufferGeometry args={[1, 2, 0.1]} />
-      <meshBasicMaterial color="green" />
+      <boxBufferGeometry args={[1, 1, 1]} />
+      <meshBasicMaterial color="red" />
     </mesh>
   );
 }
 
 export default Scene1;
+
