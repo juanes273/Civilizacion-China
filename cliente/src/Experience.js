@@ -7,9 +7,16 @@ import Welcome from './Welcome';
 import Plaza from './Plaza';
 import React, { useState, useRef, useEffect } from 'react';
 import { handleKeyDown, handleKeyUp, updateCameraMovement } from './cameraControls';
-
+import Scene1 from './Scene1';
+import Scene2 from './Scene2';
 
 export default function Experience(props) {
+  const [currentScene, setCurrentScene] = useState('sceneWelcome');
+
+  const changeScene = (scene) => {
+    setCurrentScene(scene);
+  };
+
   const controlsRef = useRef(null);
   const [movement, setMovement] = useState({
     forward: false,
@@ -50,7 +57,9 @@ export default function Experience(props) {
       <ambientLight intensity={0.5} />
 
       <Sky/>
-      <Welcome changeScene={props.changeScene} />
+      {currentScene === 'sceneWelcome' && <Welcome changeScene={changeScene} />}
+      {currentScene === 'scene1' && <Scene1 changeScene={changeScene} />}
+      {currentScene === 'scene2' && <Scene2 changeScene={changeScene} />}
     </>
   );
 }
