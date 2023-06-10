@@ -9,11 +9,17 @@ import React, { useState, useRef, useEffect } from 'react';
 import { handleKeyDown, handleKeyUp, updateCameraMovement } from './cameraControls';
 import { DirectionalLightHelper } from 'three'
 import { useHelper } from '@react-three/drei'
-
+import Scene1 from './Scene1';
+import Scene2 from './Scene2';
 
 export default function Experience(props) {
+  const [currentScene, setCurrentScene] = useState('sceneWelcome');
   const directionalLightRef = useRef()
   useHelper(directionalLightRef, DirectionalLightHelper, 1)
+  const changeScene = (scene) => {
+    setCurrentScene(scene);
+  };
+  
   const controlsRef = useRef(null);
   const [movement, setMovement] = useState({
     forward: false,
@@ -54,7 +60,9 @@ export default function Experience(props) {
       <ambientLight intensity={0.5} />
 
       <Sky/>
-      <Welcome changeScene={props.changeScene} />
+      {currentScene === 'sceneWelcome' && <Welcome changeScene={changeScene} />}
+      {currentScene === 'scene1' && <Scene1 changeScene={changeScene} />}
+      {currentScene === 'scene2' && <Scene2 changeScene={changeScene} />}
     </>
   );
 }
