@@ -2,11 +2,14 @@ import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { TextureLoader } from "three";
 import TerracotaSoldier from './TerracotaSoldier';
+import Vase from './Vase';
+import Vase2 from './Vase2';
+import Vase3 from './Vase3';
 import { Text } from '@react-three/drei'
 import { Float } from '@react-three/drei'
 
-export default function Welcome({changeScene}) {
-  const handleClick = () => {
+export default function Welcome(props) {
+const handleClick = () => {
     changeScene('scene1');
   };
   const group = useRef();
@@ -51,14 +54,14 @@ export default function Welcome({changeScene}) {
         <meshStandardMaterial map={pared} />
       </mesh>
 
-      <mesh  position={[resize * 0.5,resize * 0.25,resize*0.5 ]} rotation={[0,Math.PI * 0.07 ,0]}>
+      {/* <mesh  position={[resize * 0.5,resize * 0.25,resize*0.5 ]} rotation={[0,Math.PI * 0.07 ,0]}>
         <boxGeometry  args={[resize,resize*0.5,0.01]}  />
         <meshStandardMaterial map={puerta} />
       </mesh>
       <mesh position={[resize*0.5,resize * 0.25,-resize * 0.5]} rotation={[0,-Math.PI * 0.07,0]}>
         <boxGeometry args={[resize,resize*0.5,0.01]}  />
         <meshStandardMaterial map={puerta} />
-      </mesh>
+      </mesh> */}
 
       
       <mesh position={[resize,resize * 0.25,-resize * 0.5]} >
@@ -77,6 +80,12 @@ export default function Welcome({changeScene}) {
         <boxGeometry args={[resize,resize*0.5,0.01]} />
         <meshStandardMaterial map={pared} />
       </mesh>
+
+      <mesh position-y={resize * 0.25} position-x={resize * 2.5} rotation-y={Math.PI * 0.5}>
+        <boxGeometry args={[resize,resize*0.5,0.01]}  />
+        <meshStandardMaterial map={pared} />
+      </mesh>
+
       
       
       <mesh scale={1.2} rotation-y={-Math.PI*0.8} position={[resize*0.4,0,-resize*0.2]}>
@@ -101,6 +110,11 @@ export default function Welcome({changeScene}) {
       </Float>
       <TerracotaSoldier onClick={handleClick} position-y={2}/>
       </mesh>
+      <Vase position={[resize*2.4,1,-resize*0.4]}/>
+      <Vase position={[-6,1,7]}/>
+      <Vase2 scale={0.5} position={[resize,0.3,8]} rotation-y={Math.PI*0.6}/>
+      <Vase3 scale={3} position={[resize*1.7,-0.8,9.5]} rotation-y={Math.PI*0.5}/>
     </group>
+    
   );
 }
