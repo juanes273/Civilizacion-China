@@ -5,7 +5,10 @@ import TerracotaSoldier from './TerracotaSoldier';
 import { Text } from '@react-three/drei'
 import { Float } from '@react-three/drei'
 
-export default function Welcome(props) {
+export default function Welcome({changeScene}) {
+  const handleClick = () => {
+    changeScene('scene1');
+  };
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/static/TerracotaSoldier.glb");
   const { actions } = useAnimations(animations, group);
@@ -96,7 +99,7 @@ export default function Welcome(props) {
           Bienvenido a la civilizacion china
         </Text>
       </Float>
-      <TerracotaSoldier position-y={2}/>
+      <TerracotaSoldier onClick={handleClick} position-y={2}/>
       </mesh>
     </group>
   );

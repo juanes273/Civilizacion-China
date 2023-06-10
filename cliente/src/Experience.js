@@ -6,62 +6,45 @@ import TerracotaSoldier from './TerracotaSoldier';
 import Welcome from './Welcome';
 import Plaza from './Plaza';
 import React, { useState, useRef, useEffect } from 'react';
+import { handleKeyDown, handleKeyUp, updateCameraMovement } from './cameraControls';
+import Scene1 from './Scene1';
+import Scene2 from './Scene2';
 
-export default function Experience() {
+export default function Experience(props) {
+  const [currentScene, setCurrentScene] = useState('sceneWelcome');
+
+  const changeScene = (scene) => {
+    setCurrentScene(scene);
+  };
+
   const controlsRef = useRef(null);
   const [movement, setMovement] = useState({
     forward: false,
     backward: false,
     left: false,
     right: false,
-    up:false,
+    up: false,
     down: false
   });
-  const velocidad = 0.5
+  const velocidad = 0.5;
 
   useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === "w") setMovement((prev) => ({ ...prev, forward: true }));
-      if (event.key === "s") setMovement((prev) => ({ ...prev, backward: true }));
-      if (event.key === "a") setMovement((prev) => ({ ...prev, left: true }));
-      if (event.key === "d") setMovement((prev) => ({ ...prev, right: true }));
-      if (event.key === " ") setMovement((prev) => ({ ...prev, up: true }));
-      if (event.key === "Shift") setMovement((prev) => ({ ...prev, down: true }));
-    };
+    const handleKeyDownEvent = (event) => handleKeyDown(event, setMovement);
+    const handleKeyUpEvent = (event) => handleKeyUp(event, setMovement);
 
-    const handleKeyUp = (event) => {
-      if (event.key === "w") setMovement((prev) => ({ ...prev, forward: false }));
-      if (event.key === "s") setMovement((prev) => ({ ...prev, backward: false }));
-      if (event.key === "a") setMovement((prev) => ({ ...prev, left: false }));
-      if (event.key === "d") setMovement((prev) => ({ ...prev, right: false }));
-      if (event.key === " ") setMovement((prev) => ({ ...prev, up: false }));
-      if (event.key === "Shift") setMovement((prev) => ({ ...prev, down: false }));
-    };
-
-    document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("keyup", handleKeyUp);
+    document.addEventListener("keydown", handleKeyDownEvent);
+    document.addEventListener("keyup", handleKeyUpEvent);
 
     return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("keyup", handleKeyUp);
+      document.removeEventListener("keydown", handleKeyDownEvent);
+      document.removeEventListener("keyup", handleKeyUpEvent);
     };
   }, []);
 
   const { camera } = useThree();
 
   useFrame(() => {
-    const { forward, backward, left, right, up,down } = movement;
-
-    // if (forward) controlsRef.current.moveForward(velocidad);
-    // if (backward) controlsRef.current.moveForward(-velocidad);
-    // if (left) controlsRef.current.moveRight(-velocidad);
-    // if (right) controlsRef.current.moveRight(velocidad);
-    if (forward) camera.translateZ(-0.5);
-    if (backward) camera.translateZ(0.5);
-    if (left) camera.translateX(-0.5);
-    if (right) camera.translateX(0.5);
-    if (up) camera.translateY(0.5);
-    if (down) camera.translateY(-0.5);
+    updateCameraMovement(movement, camera);
   });
 
   return (
@@ -74,9 +57,9 @@ export default function Experience() {
       <ambientLight intensity={0.5} />
 
       <Sky/>
-      <Welcome/>
-      <Plaza/>
-
+      {currentScene === 'sceneWelcome' && <Welcome changeScene={changeScene} />}
+      {currentScene === 'scene1' && <Scene1 changeScene={changeScene} />}
+      {currentScene === 'scene2' && <Scene2 changeScene={changeScene} />}
     </>
   );
 }

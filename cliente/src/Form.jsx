@@ -1,20 +1,31 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Index2 from './index2';
 
 function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/index2" element={<Index2 />} />
+      </Routes>
+    </Router>
+  );
+}
+
+function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
-
-  const instance = axios.create({
-    baseURL: 'http://localhost:5000'
-  });
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await instance.post('/api/users', { email, password });
+      const response = await axios.post('https://civilizacion-china.onrender.com/api/login', { email, password });
       setMessage(response.data.message);
+      navigate('/index2');
     } catch (error) {
       console.log(error);
     }
