@@ -8,8 +8,8 @@ import Vase3 from './Vase3';
 import { Text } from '@react-three/drei'
 import { Float } from '@react-three/drei'
 
-export default function Welcome(props) {
-const handleClick = () => {
+export default function Welcome({changeScene}) {
+  const handleClick = () => {
     changeScene('scene1');
   };
   const group = useRef();

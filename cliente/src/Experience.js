@@ -13,7 +13,6 @@ import Scene1 from './Scene1';
 import Scene2 from './Scene2';
 
 export default function Experience(props) {
-  const [currentScene, setCurrentScene] = useState('sceneWelcome');
   const directionalLightRef = useRef()
   useHelper(directionalLightRef, DirectionalLightHelper, 1)
   const changeScene = (scene) => {
