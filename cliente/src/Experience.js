@@ -11,12 +11,8 @@ import Scene1 from './Scene1';
 import Scene2 from './Scene2';
 
 export default function Experience(props) {
-  const [currentScene, setCurrentScene] = useState('sceneWelcome');
-
-  const changeScene = (scene) => {
-    setCurrentScene(scene);
-  };
-
+  const directionalLightRef = useRef()
+  useHelper(directionalLightRef, DirectionalLightHelper, 1)
   const controlsRef = useRef(null);
   const [movement, setMovement] = useState({
     forward: false,
@@ -57,9 +53,7 @@ export default function Experience(props) {
       <ambientLight intensity={0.5} />
 
       <Sky/>
-      {currentScene === 'sceneWelcome' && <Welcome changeScene={changeScene} />}
-      {currentScene === 'scene1' && <Scene1 changeScene={changeScene} />}
-      {currentScene === 'scene2' && <Plaza changeScene={changeScene} />}
+      <Welcome changeScene={props.changeScene} />
     </>
   );
 }
