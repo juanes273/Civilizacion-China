@@ -10,7 +10,7 @@ export default function Plaza({changeScene}) {
   const group = useRef();
   const resize = 20
   const handleClick = () => {
-    changeScene('scene1');
+    changeScene('sceneWelcome');
   };
   const PATHPP = "/static/PisoPlaza/"
   const props = useTexture({

@@ -59,7 +59,7 @@ export default function Experience(props) {
       <Sky/>
       {currentScene === 'sceneWelcome' && <Welcome changeScene={changeScene} />}
       {currentScene === 'scene1' && <Scene1 changeScene={changeScene} />}
-      {currentScene === 'scene2' && <Scene2 changeScene={changeScene} />}
+      {currentScene === 'scene2' && <Plaza changeScene={changeScene} />}
     </>
   );
 }
