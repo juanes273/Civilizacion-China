@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { TextureLoader } from "three";
 import TerracotaSoldier from './TerracotaSoldier';
@@ -8,10 +8,12 @@ import Vase3 from './Vase3';
 import { Text } from '@react-three/drei'
 import { Float } from '@react-three/drei'
 
-export default function Welcome({changeScene}) {
+export default function Welcome({onSceneChange}) {
+
   const handleClick = () => {
-    changeScene('scene1');
+    onSceneChange('scene1');
   };
+
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/static/TerracotaSoldier.glb");
   const { actions } = useAnimations(animations, group);
@@ -29,7 +31,6 @@ export default function Welcome({changeScene}) {
   const techo = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Stylized_Thatched_Roof_002_basecolor.jpg", (texture) => {
     // console.log("Textura de pared cargada correctamente", texture);
   });
-  
   
   return (
     <group>

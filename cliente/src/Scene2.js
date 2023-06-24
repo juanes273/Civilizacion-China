@@ -1,9 +1,9 @@
 import React from 'react';
 import Plaza from './Plaza';
 
-function Scene2({ changeScene }) {
+function Scene2({ onSceneChange }) {
   const handleClick = () => {
-    changeScene('sceneWelcome');
+    onSceneChange('sceneWelcome');
   };
 
   return (

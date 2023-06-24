@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Index2 from './index2';
+import Principal from './PaginaP';
+
 import {
   MDBBtn,
   MDBContainer,
@@ -19,7 +21,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />
-        <Route path="/index2" element={<Index2 />} />
+        <Route path="/Home" element={<Principal />} />
       </Routes>
     </Router>
   );
@@ -36,7 +38,7 @@ function LoginPage() {
     try {
       const response = await axios.post('https://civilizacion-china.onrender.com/api/login', { email, password });
       setMessage(response.data.message);
-      navigate('/index2');
+      navigate('/home');
     } catch (error) {
       console.log(error);
     }

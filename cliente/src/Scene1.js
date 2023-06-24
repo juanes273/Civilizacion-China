@@ -5,9 +5,9 @@ import { useFrame, useThree, useEventListener } from "@react-three/fiber";
 import { Perf } from 'r3f-perf';
 import { useGLTF } from "@react-three/drei";
 
-function Scene1({ changeScene }) {
+function Scene1({ onSceneChange }) {
   const handleClick = () => {
-    changeScene('scene2');
+    onSceneChange('welcome');
   };
 
   return (
