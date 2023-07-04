@@ -1,166 +1,74 @@
 import React from "react";
-import { Link, BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import Index2 from "./index2";
 import backgroundImage from "./background.jpg";
-import { render } from "@react-three/fiber";
-import logo from "./assets/img/logo.png"
+import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom';
+import TerracotaSoldier from './TerracotaSoldier';
 
-// Componente Principal
 function Principal() {
-    return (
-      <div>
-        {/* notification for small viewports and landscape oriented smartphones */}
-        <div className="device-notification">
-          <a className="device-notification--logo" href="#0">
-            <img src={logo} alt="Global" />
-            <p>Global</p>
-          </a>
-          <p className="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-        </div>
-  
-        <div className="perspective effect-rotate-left">
-          <div className="container">
-            <div className="outer-nav--return"></div>
-            <div id="viewport" className="l-viewport">
-              <div className="l-wrapper">
-                <header className="header">
-                  <a className="header--logo" href="#0">
-                    <img src={logo} alt="Global" />
-                    <p>Global</p>
-                  </a>
-                  <button className="header--cta cta">Hire Us</button>
-                  <div className="header--nav-toggle">
-                    <span></span>
-                  </div>
-                </header>
-                <nav className="l-side-nav">
-                  <ul className="side-nav">
-                    <li className="is-active"><span>Home</span></li>
-                    <li><span>Works</span></li>
-                    <li><span>About</span></li>
-                    <li><span>Contact</span></li>
-                    <li><span>Hire us</span></li>
-                  </ul>
-                </nav>
-                <ul className="l-main-content main-content">
-                  <li className="l-section section section--is-active">
-                    <div className="intro">
-                      <div className="intro--banner">
-                        <h1>Your next<br />interactive<br />experience</h1>
-                        <button className="cta">Hire Us
-                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style={{ enableBackground: 'new 0 0 150 118' }} xmlSpace="preserve">
-                            <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                              <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
-                            </g>
-                          </svg>
-                          <span className="btn-background"></span>
-                        </button>
-                        <img src="assets/img/introduction-visual.png" alt="Welcome" />
-                      </div>
-                    </div>
-                  </li>
-                  <li className="l-section section">
-                    <div className="work">
-                      <h2>Selected Works</h2>
-                      <div className="work--lockup">
-                        <ul className="slider">
-                          <li className="slider--item slider--item-left">
-                            <a href="#0">
-                              <div className="slider--item-image">
-                                <img src="assets/img/work-image.jpg" alt="Work" />
-                              </div>
-                              <p className="slider--item-title">Digital Agency</p>
-                            </a>
-                          </li>
-                          <li className="slider--item slider--item-center">
-                            <a href="#0">
-                              <div className="slider--item-image">
-                                <img src="assets/img/work-image.jpg" alt="Work" />
-                              </div>
-                              <p className="slider--item-title">Photography Studio</p>
-                            </a>
-                          </li>
-                          <li className="slider--item slider--item-right">
-                            <a href="#0">
-                              <div className="slider--item-image">
-                                <img src="assets/img/work-image.jpg" alt="Work" />
-                              </div>
-                              <p className="slider--item-title">Architecture Studio</p>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="l-section section">
-                    <div className="about">
-                      <h2>About Us</h2>
-                      <div className="about--banner">
-                        <div className="about--banner-image">
-                          <img src="assets/img/about-image.png" alt="About" />
-                        </div>
-                        <div className="about--banner-text">
-                          <h3>We shape brands through exploration, applying in-depth<br />research to challenge assumptions at every turn.</h3>
-                          <p className="preamble">Our team of experts are equipped with the knowledge and experience needed to<br />tell your brand's story and craft&nbsp;a design that truly represents you.</p>
-                          <p>Our clients come to us for our&nbsp;unparalleled&nbsp;ability to&nbsp;create<br />and execute&nbsp;groundbreaking brand experiences.</p>
-                          <p><a href="#0">Learn more</a></p>
-                        </div>
-                      </div>
-                      <div className="about--options">
-                        <ul className="options--list">
-                          <li><a href="#0"><h4>Start a project</h4></a></li>
-                          <li><a href="#0"><h4>View our work</h4></a></li>
-                          <li><a href="#0"><h4>Meet the team</h4></a></li>
-                          <li><a href="#0"><h4>Contact us</h4></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="l-section section">
-                    <div className="contact">
-                      <h2>Contact</h2>
-                      <div className="contact--lockup">
-                        <div className="location">
-                          <h3>We Are Here</h3>
-                          <ul>
-                            <li>Level 13, 2 Elizabeth St,</li>
-                            <li>Melbourne, Victoria 3000</li>
-                            <li><a href="#0">Get directions</a></li>
-                          </ul>
-                        </div>
-                        <div className="phone">
-                          <h3>Give Us A Call</h3>
-                          <ul>
-                            <li>Office: +61 03 8376 6284</li>
-                            <li>Mobile: +61 040 465 345</li>
-                          </ul>
-                        </div>
-                        <div className="email">
-                          <h3>Send Us An Email</h3>
-                          <ul>
-                            <li><a href="mailto:info@global.co">info@global.co</a></li>
-                            <li><a href="mailto:account@global.co">account@global.co</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div className="l-side-nav--open">
-                  <span className="nav-trigger"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    // Redirecciona al componente deseado
+    navigate('/');
+  };
+
+  return (
+    <Wrapper>
+      <Background src={backgroundImage} alt="background" />
+      <Navbar>
+        <NavLogo href="/">Logo</NavLogo>
+        <NavLinks>
+          <StyledNavLink exact to="/">Inicio</StyledNavLink>
+          <StyledNavLink to="/tour">Tour</StyledNavLink>
+          <StyledNavLink to="/login">Login</StyledNavLink>
+        </NavLinks>
+      </Navbar>
+      <Title>La gran Muralla china</Title>
+      <Description>Descubre de manera inmersiva esta maravilla</Description>
+      <Container>
+        <ModelViewer
+          src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+          alt="Astronaut Model"
+          camera-controls
+          auto-rotate
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          shadow-intensity="1"
+          exposure="1"
+        />
+        <HighlightBox>
+          <Paragraph>
+            La Gran Muralla China es una impresionante obra arquitectónica que se extiende a lo largo de miles de kilómetros en el norte de China. Construida durante varias dinastías chinas a lo largo de varios siglos, esta majestuosa estructura defensiva es un testimonio del ingenio y la habilidad humana.
+
+            La Muralla China fue diseñada originalmente para proteger el territorio chino de las invasiones y ataques de las tribus nómadas del norte. Con una altura que varía entre los 5 y 8 metros y una anchura suficiente para permitir que varios soldados marchen en formación, la muralla estaba equipada con torres de vigilancia estratégicamente ubicadas que permitían una amplia visibilidad y comunicación a lo largo de su extensión.
+
+            Esta maravilla arquitectónica no solo cumplía una función militar, sino que también servía como un símbolo de la grandeza y la determinación del antiguo imperio chino. Además de su propósito defensivo, la Muralla China también facilitaba el control del comercio y las comunicaciones a lo largo de la antigua Ruta de la Seda.
+
+            Hoy en día, la Gran Muralla China sigue siendo uno de los destinos turísticos más famosos del mundo, atrayendo a millones de visitantes cada año. Su belleza impresionante, su historia cautivadora y su importancia cultural la convierten en un lugar emblemático que refleja la grandeza y el legado de la antigua civilización china.
+          </Paragraph>
+        </HighlightBox>
+      </Container>
+      <StyledButton to="/tour">
+        Ir a tour 3D
+      </StyledButton>
+    </Wrapper>
+  );
 }
 
 // Estilos
+
+const HighlightBox = styled.div`
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+`;
+
 const Wrapper = styled.div`
-  padding-top: 150px;
+  padding-top: 0px;
   display: grid;
   justify-items: center;
 `;
@@ -211,7 +119,7 @@ const Paragraph = styled.p`
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: black;
 `;
 
 const StyledButton = styled(Link)`
@@ -227,16 +135,37 @@ const StyledButton = styled(Link)`
   }
 `;
 
-// Componente de enrutamiento
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Principal />} />
-        <Route path="/otrocomponente" element={<Index2 />} />
-      </Routes>
-    </Router>
-  );
-}
+const Navbar = styled.nav`
+  background-color: #333;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+`;
 
-export default App;
+const NavLogo = styled.a`
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+`;
+
+const NavLinks = styled.div`
+  display: flex;
+  cursor: pointer;
+`;
+
+const StyledNavLink = styled(NavLink)`
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+
+  &.active {
+    font-weight: bold;
+  }
+`;
+
+export default Principal;

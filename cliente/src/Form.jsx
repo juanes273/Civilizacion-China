@@ -15,16 +15,6 @@
   from 'mdb-react-ui-kit';
   import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
-  function App() {
-    return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<LoginPage />} />
-          <Route path="/Home" element={<Principal />} />
-        </Routes>
-      </Router>
-    );
-  }
 
   function LoginPage() {
     const [email, setEmail] = useState('');
@@ -49,7 +39,7 @@
         setIsLoading(true); // Mostrar la ventana de carga
         const response = await axios.post('https://civilizacion-china.onrender.com/api/login', { email, password });
         setMessage(response.data.message);
-        navigate('/Home');
+        navigate('/principal');
       } catch (error) {
         console.log(error);
       }
@@ -147,4 +137,4 @@
     );
   }
 
-  export default App;
+  export default LoginPage;
