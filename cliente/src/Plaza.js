@@ -6,11 +6,11 @@ import Soldado from './soldadoTerracota';
 import { MeshStandardMaterial } from 'three'; // Importa el material MeshStandardMaterial
 
 
-export default function Plaza({changeScene}) {
+export default function Plaza({onSceneChange}) {
   const group = useRef();
   const resize = 20
   const handleClick = () => {
-    changeScene('scene1');
+    onSceneChange('sceneWelcome');
   };
   const PATHPP = "/static/PisoPlaza/"
   const props = useTexture({
