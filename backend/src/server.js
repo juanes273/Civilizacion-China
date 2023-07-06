@@ -18,14 +18,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 // Definimos el modelo de usuario
-const User = mongoose.model('User', {
-  email: String,
-  password: String,
-});
+const User = require('./model/Model.js');
+
 
 // Ruta de registro de usuario
 app.post('/api/register', async (req, res) => {
-  const { email, password } = req.body;
+  const { email, password, name } = req.body;
 
   try {
     // Verificamos si el usuario ya existe en la base de datos
@@ -38,7 +36,7 @@ app.post('/api/register', async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     // Creamos un nuevo usuario
-    const user = new User({ email, password: hashedPassword });
+    const user = new User({ email, password: hashedPassword, name });
     await user.save();
 
     res.status(201).json({ message: 'Registro exitoso' });
@@ -63,7 +61,7 @@ app.post('/api/login', async (req, res) => {
       return res.status(400).json({ message: 'Credenciales inválidas' });
     }
 
-    res.json({ message: 'Inicio de sesión exitoso' });
+    res.json({ message: 'Inicio de sesión exitoso', username: user.name });
   } catch (error) {
     res.status(500).json({ message: 'Error en el servidor' });
   }
