@@ -8,6 +8,7 @@ import Scene1 from './Scene1';
 import Scene2 from './Scene2';
 import { useHelper } from '@react-three/drei';
 import { DirectionalLightHelper } from 'three';
+import { PerspectiveCamera } from 'three';
 
 export default function Experience() {
   const directionalLightRef = useRef();
@@ -38,7 +39,7 @@ export default function Experience() {
   }, []);
 
   const { camera } = useThree();
-
+  
   useFrame(() => {
     updateCameraMovement(movement, camera);
   });

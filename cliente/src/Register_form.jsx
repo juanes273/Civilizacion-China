@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import Index2 from './index2';
-import Principal from './PaginaP.jsx';
 
 import {
   MDBBtn,
@@ -10,20 +8,17 @@ import {
   MDBRow,
   MDBCol,
   MDBIcon,
-  MDBInput,
-  MDBModal,
-  MDBModalBody,
-  MDBModalHeader
+  MDBInput
 } from 'mdb-react-ui-kit';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
-function LoginPage() {
+
+function RegisterPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [loadingText, setLoadingText] = useState('Cargando');
-  const [username, setUsername] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -38,14 +33,11 @@ function LoginPage() {
     e.preventDefault();
     try {
       setIsLoading(true);
-      const response = await axios.post('http://localhost:5000/api/login', { email, password });
+      const response = await axios.post('https://civilizacion-china.onrender.com/api/register', { email, password });
       setMessage(response.data.message);
-      setUsername(response.data.username); // Actualiza el estado con el nombre de usuario
-      //navigate('/principal');
+      navigate('/principal');
     } catch (error) {
       console.log(error);
-    } finally {
-      setIsLoading(false);
     }
   };
 
@@ -57,7 +49,7 @@ function LoginPage() {
             <MDBIcon fas icon='crow fa-3x me-3' style={{ color: '#709085' }} />
             <img
               src='https://www.logocrea.com/wp-content/uploads/2016/07/buda1.png'
-              alt='Login image'
+              alt='Register image'
               className='w-0.1'
               style={{ objectPosition: 'left' }}
             />
@@ -65,7 +57,7 @@ function LoginPage() {
 
           <div className='d-flex flex-column justify-content-center h-custom-2 w-75 pt-4'>
             <h3 className='fw-normal mb-3 ps-5 pb-3' style={{ letterSpacing: '1px' }}>
-              Log in
+              Register
             </h3>
 
             <form onSubmit={handleSubmit}>
@@ -89,11 +81,14 @@ function LoginPage() {
               />
 
               <MDBBtn className='mb-4 px-5 mx-5 w-100' color='info' size='lg' type='submit'>
-                Login
+                Register
               </MDBBtn>
             </form>
 
             <p className='small mb-5 pb-lg-3 ms-5'>
+              <a className='text-muted' href='#!'>
+                Already have an account? Login
+              </a>
             </p>
           </div>
         </MDBCol>
@@ -101,7 +96,7 @@ function LoginPage() {
         <MDBCol sm='6' className='d-none d-sm-block px-0'>
           <img
             src='https://upload.wikimedia.org/wikipedia/commons/7/7c/Soldier_Horse.JPG'
-            alt='Login image'
+            alt='Register image'
             className='w-100'
             style={{ objectFit: 'cover', objectPosition: 'left' }}
           />
@@ -133,18 +128,8 @@ function LoginPage() {
           <p className="text-light ms-2">{loadingText}</p>
         </div>
       )}
-
-      {/* Ventana emergente */}
-      <MDBModal show={!!username} onHide={() => setUsername('')}>
-        <MDBModalHeader>
-          ¡Bienvenido, {username}!
-        </MDBModalHeader>
-        <MDBModalBody>
-          Has iniciado sesión exitosamente.
-        </MDBModalBody>
-      </MDBModal>
     </MDBContainer>
   );
 }
 
-export default LoginPage;
+export default RegisterPage;
