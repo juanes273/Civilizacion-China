@@ -84,7 +84,7 @@ const TitleContainer = styled.div`
 
 
 
-function Religion() {
+function Historia() {
   const sectionRefs = useRef([]);
   const buttonRef = useRef(null);
 
@@ -254,7 +254,7 @@ function Religion() {
        
 
         <ButtonContainer>
-          <a href="/tour" rel="noopener noreferrer">
+          <a href="/secciones" rel="noopener noreferrer">
             <StickyButton>Volver</StickyButton>
           </a>
         </ButtonContainer>
@@ -263,4 +263,4 @@ function Religion() {
   );
 }
 
-export default Religion;
+export default Historia;

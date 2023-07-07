@@ -254,7 +254,7 @@ function Historia() {
        
 
         <ButtonContainer>
-          <a href="/tour" rel="noopener noreferrer">
+          <a href="/secciones" rel="noopener noreferrer">
             <StickyButton>Volver</StickyButton>
           </a>
         </ButtonContainer>
