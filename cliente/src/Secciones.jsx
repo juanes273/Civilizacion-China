@@ -64,18 +64,18 @@ function Tourtemas() {
           <H1>Historia</H1>
         </StyledLink>
       </Block>
-      <Block backgroundImage={backgroundImage2}>
-        <StyledLink href="Principal">
+      <Block to="/cultura" backgroundImage={backgroundImage2}>
+        <StyledLink >
           <H1>Cultura</H1>
         </StyledLink>
       </Block>
-      <Block backgroundImage={backgroundImage1}>
-        <StyledLink to="/enlace3">
+      <Block  to="/religion" backgroundImage={backgroundImage1}>
+        <StyledLink>
           <H1>Religion</H1>
         </StyledLink>
       </Block>
-      <Block backgroundImage={backgroundImage2}>
-        <StyledLink to="/enlace4">
+      <Block to="/ciencia" backgroundImage={backgroundImage2}>
+        <StyledLink >
           <H1>Ciencia</H1>
         </StyledLink>
       </Block>

@@ -3,20 +3,27 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Importa los componentes de las diferentes páginas
 import Principal from './PaginaP';
-import LoginPage from './Form';
-import MiComponente from './prueba';
-import Index2 from './index2';
 
-import Tour from './Tour';
+
+import Secciones from './Secciones';
 import Historia from './Historia';
+import Cultura from './Cultura';
+import Religion from './Religion';
+import Ciencia from './Ciencia';
+
+
+
+
 function Rutas() {
   return (
     <Router>
       <Routes>y
         <Route path="/" element={< Principal/>} />
-        <Route path="/tour" element={<Tour />} />
+        <Route path="/secciones" element={<Secciones />} />
         <Route path="/historia" element={<Historia />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/cultura" element={<Cultura />} />
+        <Route path="/religion" element={<Religion />} />
+        <Route path="/ciencia" element={<Ciencia />} />
       </Routes>
     </Router>
   );

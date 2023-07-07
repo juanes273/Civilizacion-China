@@ -28,7 +28,7 @@ function Principal() {
             <h1 className="welcome-text">Bienvenido</h1>
           </ContentContainertitulo>
           <ContentContainerbutton>
-            <a  href="/tour"  rel="noopener noreferrer" >
+            <a  href="/secciones"  rel="noopener noreferrer" >
             <Button>Comenzar</Button>
             </a>
           </ContentContainerbutton>
