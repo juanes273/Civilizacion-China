@@ -7,13 +7,15 @@ import LoginPage from './Form';
 import MiComponente from './prueba';
 import Index2 from './index2';
 
+import Tour from './Tour';
+import Historia from './Historia';
 function Rutas() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<MiComponente />} />
-        <Route path="/principal" element={<Principal />} />
-        <Route path="/tour" element={<Index2 />} />
+      <Routes>y
+        <Route path="/" element={< Principal/>} />
+        <Route path="/tour" element={<Tour />} />
+        <Route path="/historia" element={<Historia />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes>
     </Router>

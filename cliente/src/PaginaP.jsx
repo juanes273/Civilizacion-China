@@ -1,171 +1,236 @@
 import React from "react";
-import styled from "styled-components";
-import backgroundImage from "./background.jpg";
-import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom';
-import TerracotaSoldier from './TerracotaSoldier';
+import { Link, BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import styled, { keyframes } from 'styled-components';
+import Index2 from "./index2";
+import backgroundImage1 from "./background1.jpg"
+import backgroundImage2 from "./background2.png"
+import { render } from "@react-three/fiber";
+import logo from "./assets/img/logo.png"
 
+// Componente Principal
 function Principal() {
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    // Redirecciona al componente deseado
-    navigate('/');
-  };
-
   return (
-    <Wrapper>
-      <Background src={backgroundImage} alt="background" />
-      <Navbar>
-        <NavLogo href="/">Logo</NavLogo>
-        <NavLinks>
-          <StyledNavLink exact to="/">Inicio</StyledNavLink>
-          <StyledNavLink to="/tour">Tour</StyledNavLink>
-          <StyledNavLink to="/login">Login</StyledNavLink>
-        </NavLinks>
+    <div>
+       <Navbar>
+        <LogoButton>
+          <LogoImage src={logo} alt="Logo" />
+        </LogoButton>
+        <NavButtonContainer>
+          <NavButton>Iniciar Sesión</NavButton>
+          <NavButton>Registrarse</NavButton>
+          <NavButton>Sobre Nosotros</NavButton>
+        </NavButtonContainer>
       </Navbar>
-      <Title>La gran Muralla china</Title>
-      <Description>Descubre de manera inmersiva esta maravilla</Description>
-      <Container>
-        <ModelViewer
-          src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-          alt="Astronaut Model"
-          camera-controls
-          auto-rotate
-          ar
-          ar-modes="webxr scene-viewer quick-look"
-          shadow-intensity="1"
-          exposure="1"
-        />
-        <HighlightBox>
-          <Paragraph>
-            La Gran Muralla China es una impresionante obra arquitectónica que se extiende a lo largo de miles de kilómetros en el norte de China. Construida durante varias dinastías chinas a lo largo de varios siglos, esta majestuosa estructura defensiva es un testimonio del ingenio y la habilidad humana.
+      <BackgroundImage>
 
-            La Muralla China fue diseñada originalmente para proteger el territorio chino de las invasiones y ataques de las tribus nómadas del norte. Con una altura que varía entre los 5 y 8 metros y una anchura suficiente para permitir que varios soldados marchen en formación, la muralla estaba equipada con torres de vigilancia estratégicamente ubicadas que permitían una amplia visibilidad y comunicación a lo largo de su extensión.
+        <ContentContainer>
+          <ContentContainertitulo>
+            <h1 className="welcome-text">Bienvenido</h1>
+          </ContentContainertitulo>
+          <ContentContainerbutton>
+            <a  href="/tour"  rel="noopener noreferrer" >
+            <Button>Comenzar</Button>
+            </a>
+          </ContentContainerbutton>
+        </ContentContainer>
+      </BackgroundImage>
 
-            Esta maravilla arquitectónica no solo cumplía una función militar, sino que también servía como un símbolo de la grandeza y la determinación del antiguo imperio chino. Además de su propósito defensivo, la Muralla China también facilitaba el control del comercio y las comunicaciones a lo largo de la antigua Ruta de la Seda.
-
-            Hoy en día, la Gran Muralla China sigue siendo uno de los destinos turísticos más famosos del mundo, atrayendo a millones de visitantes cada año. Su belleza impresionante, su historia cautivadora y su importancia cultural la convierten en un lugar emblemático que refleja la grandeza y el legado de la antigua civilización china.
-          </Paragraph>
-        </HighlightBox>
-      </Container>
-      <StyledButton to="/tour">
-        Ir a tour 3D
-      </StyledButton>
-    </Wrapper>
+    </div>
   );
 }
 
-// Estilos
-
-const HighlightBox = styled.div`
-  background-color: white;
-  padding: 20px;
-  margin: 20px 0;
-  border: 2px solid black;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-`;
-
-const Wrapper = styled.div`
-  padding-top: 0px;
-  display: grid;
-  justify-items: center;
-`;
-
-const Title = styled.h1`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-  color: #ffffff;
-  text-align: center;
-`;
-
-const Description = styled.h2`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 48px;
-  color: #ffffff;
-  text-align: center;
-`;
-
-const Background = styled.img`
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  z-index: -1;
-`;
-
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  align-items: center;
-  margin-top: 40px;
-`;
-
-const ModelViewer = styled.div`
-  /* Estilos para el contenedor del modelo .glb */
-`;
-
-const Paragraph = styled.p`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: black;
-`;
-
-const StyledButton = styled(Link)`
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+const change = keyframes`
+  0% {
+    background-image: url(${backgroundImage1});
+  }
+  20% {
+    background-image: url(${backgroundImage2});
+  }
+  40% {
+    background-image: url(${backgroundImage1});
+  }
+  60% {
+    background-image: url(${backgroundImage2});
+  }
+  80% {
+    background-image: url(${backgroundImage1});
+  }
+  100% {
+    background-image: url(${backgroundImage1});
   }
 `;
 
+
+const BackgroundImage = styled.div`
+  animation: ${change} 20s infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+
+`;
+
+
 const Navbar = styled.nav`
-  background-color: #333;
-  height: 50px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 10px;
+  z-index: 999;
 `;
 
-const NavLogo = styled.a`
+const LogoButton = styled.button`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+`;
+
+const LogoImage = styled.img`
+  width: 50px; /* Ajusta el tamaño según tus necesidades */
+  height: auto; /* Ajusta el tamaño según tus necesidades */
+`;
+
+const NavButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const NavButton = styled.button`
+  background-color: transparent;
+  border: none;
+  color: white;
   font-size: 20px;
   font-weight: bold;
-  text-decoration: none;
-  color: white;
-`;
-
-const NavLinks = styled.div`
-  display: flex;
+  margin: 0 10px;
+  padding: 20px;
   cursor: pointer;
 `;
 
-const StyledNavLink = styled(NavLink)`
-  margin-right: 20px;
-  color: white;
-  text-decoration: none;
 
-  &.active {
+
+const ContentContainer = styled.div`
+  text-align: center;
+  color: white;
+  position: relative;
+  flex-direction: column;
+  
+  
+`;
+
+
+const ContentContainertitulo = styled.div`
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  
+  
+  
+  .welcome-text {
+    font-size: 120px;
+    padding-bottom: 10px;
+ 
     font-weight: bold;
+    
+    font-family: "Montserrat",sans-serif;
   }
 `;
+const ContentContainerbutton = styled.div`
+  text-align: center;
+  color: white;
+  
+
+  display: inline-block;  .welcome-text {
+    font-size: 120px;
+    font-weight: bold;
+    font-family: "Montserrat",sans-serif;
+  }
+`;
+
+const Button = styled.button`
+
+  appearance: button;
+  background-color: #889FA5;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 19px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+ 
+ 
+&:after {
+  background-clip: padding-box;
+  background-color: #628281;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  
+ }
+ 
+ &:main, button:focus {
+  user-select: auto;
+  
+ }
+ 
+ &:hover:not(:disabled) {
+  filter: brightness(1.1);
+  
+ }
+ 
+ &:disabled {
+  cursor: auto;
+  
+ }
+ 
+ &:active:after {
+  border-width: 0 0 0px;
+  
+ }
+ 
+ &:active {
+  
+  padding-bottom: 10px;
+ }
+
+`;
+
+
+
+
 
 export default Principal;
