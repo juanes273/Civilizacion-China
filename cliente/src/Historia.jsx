@@ -39,7 +39,7 @@ const InfoText = styled.div`
 
 const InfoTitle = styled.h2`
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -49,10 +49,10 @@ const InfoTitle = styled.h2`
 `;
 
 const AdditionalContent = styled.div`
-width: 300px;
+
 padding: 25px;
-height: 300px;
-background-color: #ffffff;
+
+background-color: inherit;
 
 flex: 1;
 margin-left: 20px;
@@ -179,10 +179,20 @@ function Historia() {
         
           <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION1</InfoTitle>
-              <p> SECCION1  Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Historia</InfoTitle>
+              <p> La antigua civilización china tiene una historia rica y fascinante que se extiende a lo largo de miles de años. Desde sus inicios en el valle del río Amarillo alrededor del tercer milenio antes de Cristo, hasta la formación de un imperio unificado bajo la dinastía Qin en el siglo III antes de Cristo, China experimentó una serie de cambios culturales, políticos y sociales.
+
+                Durante los primeros años de su historia, China fue testigo del desarrollo de ciudades, la invención de la escritura china y la expansión de los reinos feudales. Durante el periodo conocido como la dinastía Zhou, que abarcó desde el siglo XI hasta el siglo III antes de Cristo, se estableció un sistema político basado en la idea del "Mandato del Cielo", que sostenía que el emperador gobernaba con el respaldo divino.
+
+                La Gran Muralla China, una de las construcciones más emblemáticas de la historia china, comenzó a construirse durante la dinastía Qin. Esta dinastía también fue famosa por unificar China bajo un solo gobierno centralizado y establecer el sistema de escritura, medidas y monedas estándar.
+
+                En los siglos siguientes, China experimentó un período de expansión y prosperidad bajo las dinastías Han, Tang y Song. Durante estas dinastías, se llevaron a cabo grandes avances en la tecnología, la agricultura y las artes. Fue durante la dinastía Han que China estableció la Ruta de la Seda, una red comercial que conectaba China con el Medio Oriente y Europa, facilitando el intercambio cultural y económico.
+
+              </p>
             </InfoText>
             <AdditionalContent>
+
+            <iframe title="Chinese Temple Pagoda" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/e1a9cd5024f24b6aa4a7ee90a29d727b/embed"> </iframe>
               {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
             </AdditionalContent>
           </InfoContainer>
@@ -192,11 +202,16 @@ function Historia() {
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#e1e1e1' }}>
         <InfoContainer >
         <AdditionalContent>
+        <iframe title="Terracotta Warrior" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/8fd9421a512745ddbe6abb31c1425017/embed"> </iframe> 
               {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
             </AdditionalContent>
             <InfoText>
-            <InfoTitle>SECCION2</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Soldados de Terracota</InfoTitle>
+              <p>
+                Los soldados de Terracota son uno de los descubrimientos arqueológicos más asombrosos de la historia. Estas estatuas de tamaño real representan un ejército masivo que fue enterrado junto al primer emperador de China, Qin Shi Huang, con el propósito de protegerlo en su vida después de la muerte. La construcción de este ejército comenzó en el año 246 a.C. y se estima que más de 8,000 soldados, junto con caballos y carros de guerra, fueron meticulosamente creados.
+
+                Cada soldado de Terracota es único y muestra detalles exquisitos, desde su apariencia física hasta sus armaduras y armas. Estas estatuas, que fueron pintadas originalmente con colores vivos, proporcionan una visión fascinante de cómo eran los soldados chinos de la época. El descubrimiento de los soldados de Terracota en 1974 en Xi'an, China, ha permitido a los investigadores y al mundo en general comprender mejor la magnificencia y el poder del antiguo imperio chino bajo la dinastía Qin.
+              </p>
             </InfoText>
            
           </InfoContainer>
