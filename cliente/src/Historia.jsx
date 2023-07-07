@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import styled from 'styled-components';
-import backgroundImage2 from "./background1.jpg"
+import backgroundImage2 from "./background2.jpg"
 
 const SectionContainer = styled.div`
   height: 100vh;
@@ -15,10 +15,11 @@ const InfoContainer = styled.div`
   display: inline-flex;
   align-items: center;
   padding: 0px;
-  
   background-color:#889FA5;
   flex: 1;
-  
+  background-image: url(${backgroundImage2});
+  background-size: cover;
+  background-repeat: no-repeat;
   justify-content: flex-start; /* Alineación a la izquierda */
 `;
 
@@ -33,8 +34,8 @@ const InfoText = styled.div`
   font-family: "Montserrat", sans-serif;
   font-weight: sans-serif;
   border-radius: 35px;
-  background-color: rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(100px);
 `;
 
 const InfoTitle = styled.h2`
@@ -51,9 +52,6 @@ const InfoTitle = styled.h2`
 const AdditionalContent = styled.div`
 
 padding: 25px;
-
-background-color: inherit;
-
 flex: 1;
 margin-left: 20px;
 margin-right: 20px;

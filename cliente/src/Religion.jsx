@@ -15,10 +15,11 @@ const InfoContainer = styled.div`
   display: inline-flex;
   align-items: center;
   padding: 0px;
-  
   background-color:#889FA5;
   flex: 1;
-  
+  background-image: url(${backgroundImage2});
+  background-size: cover;
+  background-repeat: no-repeat;
   justify-content: flex-start; /* Alineación a la izquierda */
 `;
 
@@ -33,13 +34,13 @@ const InfoText = styled.div`
   font-family: "Montserrat", sans-serif;
   font-weight: sans-serif;
   border-radius: 35px;
-  background-color: rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(100px);
 `;
 
 const InfoTitle = styled.h2`
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -49,11 +50,8 @@ const InfoTitle = styled.h2`
 `;
 
 const AdditionalContent = styled.div`
-width: 300px;
-padding: 25px;
-height: 300px;
-background-color: #ffffff;
 
+padding: 25px;
 flex: 1;
 margin-left: 20px;
 margin-right: 20px;
@@ -81,7 +79,6 @@ const TitleContainer = styled.div`
   width: 100%;
   text-align: center;
 `;
-
 
 
 function Historia() {
@@ -183,6 +180,7 @@ function Historia() {
               <p> SECCION1  Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
             </InfoText>
             <AdditionalContent>
+            <iframe title="Chinese Candlestick-Freepoly.org" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/e34a5a581e2143f9bdda0431ce53ed59/embed"> </iframe> 
               {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
             </AdditionalContent>
           </InfoContainer>

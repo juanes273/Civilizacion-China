@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import styled from 'styled-components';
-import backgroundImage2 from "./background1.jpg"
+import backgroundImage2 from "./background6.jpg"
 
 const SectionContainer = styled.div`
   height: 100vh;
@@ -15,10 +15,11 @@ const InfoContainer = styled.div`
   display: inline-flex;
   align-items: center;
   padding: 0px;
-  
   background-color:#889FA5;
   flex: 1;
-  
+  background-image: url(${backgroundImage2});
+  background-size: cover;
+  background-repeat: no-repeat;
   justify-content: flex-start; /* Alineación a la izquierda */
 `;
 
@@ -33,13 +34,13 @@ const InfoText = styled.div`
   font-family: "Montserrat", sans-serif;
   font-weight: sans-serif;
   border-radius: 35px;
-  background-color: rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(100px);
 `;
 
 const InfoTitle = styled.h2`
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -49,11 +50,8 @@ const InfoTitle = styled.h2`
 `;
 
 const AdditionalContent = styled.div`
-width: 300px;
-padding: 25px;
-height: 300px;
-background-color: #ffffff;
 
+padding: 25px;
 flex: 1;
 margin-left: 20px;
 margin-right: 20px;
@@ -81,6 +79,7 @@ const TitleContainer = styled.div`
   width: 100%;
   text-align: center;
 `;
+
 
 
 
@@ -179,12 +178,13 @@ function Historia() {
         
           <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION1</InfoTitle>
-              <p> SECCION1  Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Cultura</InfoTitle>
+              <p> La antigua cultura china era rica y diversa, abarcando una amplia gama de aspectos que incluían el arte, la música, la literatura, la filosofía y las tradiciones. Una de las formas de arte más emblemáticas de la antigua China fue la caligrafía, considerada una forma de expresión artística y una habilidad esencial para los eruditos. La escritura china, con sus caracteres pictóricos y estilizados, se considera una de las más antiguas y complejas del mundo.
+
+La música también ocupaba un lugar destacado en la cultura antigua china. Los instrumentos musicales tradicionales, como la pipa, el guzheng y el erhu, eran ampliamente utilizados y la música era valorada tanto en la corte imperial como en la vida cotidiana. Además, el teatro chino, con sus formas de ópera y drama, fue una forma de entretenimiento popular que combinaba música, danza y actuación.
+              </p>
             </InfoText>
-            <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
-            </AdditionalContent>
+            <AdditionalContent><iframe title="Tomb in Song dynasty Chinese cultural heritage" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/6ce4f7f47eba4358b1ad37fa6a21c074/embed"> </iframe> </AdditionalContent>
           </InfoContainer>
           
         </SectionContainer>
@@ -192,11 +192,13 @@ function Historia() {
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#e1e1e1' }}>
         <InfoContainer >
         <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
+        <iframe title="Confucious" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/2dda6f9f04124d0eb51575d068ce06bc/embed"> </iframe>
             </AdditionalContent>
             <InfoText>
-            <InfoTitle>SECCION2</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Filosofia</InfoTitle>
+              <p>
+                En cuanto a la filosofía, la antigua China fue el hogar de diversas escuelas de pensamiento, incluyendo el confucianismo, el taoísmo y el budismo. Estas filosofías influyeron profundamente en la sociedad china y en la forma en que se entendían las relaciones sociales, el gobierno y el propósito de la vida. El confucianismo, por ejemplo, enfatizaba la importancia de la ética, la moralidad y la armonía social, mientras que el taoísmo promovía la búsqueda del equilibrio y la conexión con la naturaleza. Estas filosofías siguen siendo parte integral de la cultura china hasta el día de hoy, influyendo en las prácticas y creencias de la sociedad moderna.
+              </p>
             </InfoText>
            
           </InfoContainer>
