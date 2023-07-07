@@ -13,12 +13,20 @@ function Principal() {
     <div>
        <Navbar>
         <LogoButton>
+          <a  href="/"  rel="noopener noreferrer" >
           <LogoImage src={logo} alt="Logo" />
+          </a>
         </LogoButton>
         <NavButtonContainer>
-          <NavButton>Iniciar Sesión</NavButton>
-          <NavButton>Registrarse</NavButton>
-          <NavButton>Sobre Nosotros</NavButton>
+        <a  href="/"  rel="noopener noreferrer" >
+          <NavButton to="/" >Iniciar Sesión</NavButton>
+          </a>
+          <a  href="/"  rel="noopener noreferrer" >
+          <NavButton  >Registrarse</NavButton>
+          </a>
+          <a  href="/"  rel="noopener noreferrer" >
+          <NavButton >Sobre Nosotros</NavButton>
+          </a>
         </NavButtonContainer>
       </Navbar>
       <BackgroundImage>
