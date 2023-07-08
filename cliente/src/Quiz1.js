@@ -8,12 +8,13 @@ import { shuffle } from 'lodash';
 import { AuthContext } from "./authContext";
 import { useContext } from "react";
 
+
 const textureLoader = new TextureLoader();
 const pared = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Wood_Wall_002_basecolor.jpg");
 const piso = textureLoader.load("/static/Floor/Tatami_001_SD/Tatami_001_basecolor.jpg");
 const techo = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Stylized_Thatched_Roof_002_basecolor.jpg");
-
 export default function Quiz1({ onSceneChange }) {
+  const { perdida, setPerdida } = useContext(AuthContext);
   const { categoria } = useContext(AuthContext);
   const { camera } = useThree();
   const group = useRef();
@@ -97,6 +98,7 @@ export default function Quiz1({ onSceneChange }) {
           camera.position.z = 0;
         } else {
           onSceneChange('quiz');
+          setPerdida(true);
         }
 
         // console.log("Animación del botón completada después de 2 segundos");
@@ -107,17 +109,7 @@ export default function Quiz1({ onSceneChange }) {
     botonBack.current.position.x = 7
     setTimeout(() => {
       botonBack.current.position.x = 8;
-      onSceneChange('welcome');
-    }, 200);
-  };
-  const handleClick1 = () => {
-    // boton.current.position.x = 7
-    setTimeout(() => {
-      // boton.current.position.x = 8;
-      setTimeout(() => {
-        onSceneChange('welcome');
-        // console.log("Animación del botón completada después de 2 segundos");
-      }, 200);
+      window.history.back();
     }, 200);
   };
   useFrame((_, delta) => {
@@ -125,15 +117,6 @@ export default function Quiz1({ onSceneChange }) {
       estrellaRef.current.rotation.y += 0.1; // Adjust the rotation speed as desired
     }
   });
-  //   useEffect(() => {
-  //     console.log(currentIndex)
-
-  //     // Opcional: Función de limpieza
-  //     return () => {
-  //       // Código de limpieza (opcional)
-  //     };
-  //   });
-
   const goBack = () => {
     window.history.back();
   };

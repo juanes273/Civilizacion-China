@@ -137,11 +137,13 @@ const StyledButton = styled.button`
 function Historia() {
 
   const { categoria, setCategoria } = useContext(AuthContext);
+  const { perdida, setPerdida } = useContext(AuthContext);
   const navigate = useNavigate();
   const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
   const cambiarCategoria = () => {
     setCategoria('cultura');
+    setPerdida(false)
     navigate('/tour');
   };
 

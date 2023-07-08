@@ -3,7 +3,8 @@ import { TextureLoader,Vector3 } from "three";
 import { Text } from '@react-three/drei';
 import {  useThree } from "@react-three/fiber";
 import { AuthContext } from "./authContext";
-import { useContext } from "react";
+import { useContext } from "react";7
+import TerracotaSoldier from "./TerracotaSoldier";
 
 const textureLoader = new TextureLoader();
 const pared = textureLoader.load( "/static/Wall/Wood_Wall_002_SD/Wood_Wall_002_basecolor.jpg");
@@ -12,6 +13,7 @@ const techo = textureLoader.load("/static/Wall/Wood_Wall_002_SD/Stylized_Thatche
 
 export default function Quiz({ onSceneChange }) {
   const { categoria } = useContext(AuthContext);
+  const { perdida } = useContext(AuthContext);
   const { camera } = useThree();
   const group = useRef();
   const botonAzul = useRef();
@@ -38,23 +40,6 @@ export default function Quiz({ onSceneChange }) {
     }, 200);
     
   }
-  const handleClickAzul =  () =>{
-    botonAzul.current.position.x = 7
-    setTimeout(() => {
-      botonAzul.current.position.x = 8;
-      setTimeout(() => {
-        onSceneChange('welcome');
-      },200);
-    }, 300);
-  }
-
-  const handleClickBack = () => {
-    botonBack.current.position.x = 7
-    setTimeout(() => {
-        botonBack.current.position.x = 8;
-        onSceneChange('welcome');
-    }, 200);
-  };
 
   return (
     <group>
@@ -98,7 +83,7 @@ export default function Quiz({ onSceneChange }) {
         <boxGeometry args={[resize*1.5,resize*1.5,0.01]} />
         <meshStandardMaterial map={techo} />
       </mesh>
-      
+      {perdida==false  && (
       <mesh position={[8, 10, 0]}>
         <Text fontSize={2} color="Black" position-y={6.2} maxWidth={35} textAlign="center" rotation={[0, Math.PI * 0.5, 0]}>
           <mesh position={[0, 0, -0.01]}>
@@ -109,7 +94,19 @@ export default function Quiz({ onSceneChange }) {
           Bienvenido el quiz de la civilizacion china, aquí serán evaluados todos tus conocimientos aprendidos sobre {categoria}.{"\n"}
           ¿Estas listo? Presiona el botón para continuar
         </Text>
-      </mesh>
+      </mesh>)}
+      {perdida==true  && (
+      <mesh position={[8, 10, 0]}>
+        <Text fontSize={2} color="Black" position-y={6.2} maxWidth={35} textAlign="center" lineHeight={1.3} rotation={[0, Math.PI * 0.5, 0]}>
+          <mesh position={[0, 0, -0.01]}>
+            <boxGeometry args={[40, 15, 0.01]} />
+            <meshBasicMaterial color="white" opacity={0.8} />
+          </mesh>
+
+          Has contestado una pregunta incorrectamente.{"\n"}
+          Pero no te preocupes, puedes intentarlo de nuevo con el botón abajo
+        </Text>
+      </mesh>)}
       <mesh ref={botonRojo} onClick={handleClickRojo} position={[8, 5, 0]} rotation={[0, Math.PI * 0.5, 0]}>
         <boxGeometry args={[3, 3, 3]} />
         <meshStandardMaterial color={"red"} />
@@ -121,6 +118,9 @@ export default function Quiz({ onSceneChange }) {
             >
               >
             </Text>
+      </mesh>
+      <mesh  position={[12,9.56,-18]} rotation={[0, -Math.PI*0.25, 0] }>
+        <TerracotaSoldier scale={5}/>
       </mesh>
     </group>
   );
