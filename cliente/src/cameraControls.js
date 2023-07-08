@@ -14,7 +14,7 @@ export function handleKeyUp(event, setMovement) {
 
 export function updateCameraMovement(movement, camera) {
   const { forward, backward, left, right, up, down } = movement;
-  const movementSpeed = 0.1; // Adjust the movement speed as needed
+  const movementSpeed = 0.5; // Adjust the movement speed as needed
 
   if (forward) camera.translateZ(-movementSpeed);
   if (backward) camera.translateZ(movementSpeed);

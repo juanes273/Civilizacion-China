@@ -3,14 +3,29 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { Perf } from 'r3f-perf';
 import React, { useState, useRef, useEffect } from 'react';
 import { handleKeyDown, handleKeyUp, updateCameraMovement } from './cameraControls';
-import Welcome from './Welcome';
 import Scene1 from './Scene1';
 import Scene2 from './Scene2';
+import Quiz from './Quiz';
+import Quiz1 from './Quiz1';
 import { useHelper } from '@react-three/drei';
 import { DirectionalLightHelper } from 'three';
 import { PerspectiveCamera } from 'three';
+import { Html } from '@react-three/drei';
 
 export default function Experience() {
+
+  const Point = () => {
+    const { size, viewport } = useThree();
+    const aspect = size.width / viewport.width;
+
+    return (
+      <mesh position={[0, 0, -10]}>
+        <circleBufferGeometry args={[0.02 / aspect, 8]} />
+        <meshBasicMaterial color="black" />
+      </mesh>
+    );
+  };
+
   const directionalLightRef = useRef();
   useHelper(directionalLightRef, DirectionalLightHelper, 1);
   const controlsRef = useRef(null);
@@ -23,7 +38,7 @@ export default function Experience() {
     down: false
   });
   const velocidad = 0.5;
-  const [currentScene, setCurrentScene] = useState("welcome");
+  const [currentScene, setCurrentScene] = useState("quiz");
 
   useEffect(() => {
     const handleKeyDownEvent = (event) => handleKeyDown(event, setMovement);
@@ -39,7 +54,7 @@ export default function Experience() {
   }, []);
 
   const { camera } = useThree();
-  
+
   useFrame(() => {
     updateCameraMovement(movement, camera);
   });
@@ -50,18 +65,36 @@ export default function Experience() {
 
   let sceneComponent;
 
+
+
+
+
+
   if (currentScene === "welcome") {
     sceneComponent = <Welcome onSceneChange={handleSceneChange} />;
-  } else if (currentScene === "scene1") {
-    sceneComponent = <Scene1 onSceneChange={handleSceneChange} />;
-  } else if (currentScene === "scene2") {
-    sceneComponent = <Scene2 onSceneChange={handleSceneChange} />;
+  } else if (currentScene === "quiz") {
+    sceneComponent = <Quiz onSceneChange={handleSceneChange} />;
+  } else if (currentScene === "quiz1") {
+    sceneComponent = <Quiz1 onSceneChange={handleSceneChange} />;
   }
 
   return (
     <>
-      <Perf position="top-left" />
 
+      <Html center>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{
+            width: '2px',
+            height: '20px',
+            backgroundColor: 'red',
+          }} />
+          <div style={{
+            width: '20px',
+            height: '2px',
+            backgroundColor: 'red',
+          }} />
+        </div>
+      </Html>
       <PointerLockControls ref={controlsRef} />
 
       <directionalLight position={[1, 2, 3]} intensity={1.5} />
