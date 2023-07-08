@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import styled from 'styled-components';
-import backgroundImage2 from "./background1.jpg"
+import backgroundImage2 from "./background8.jpg"
 
 const SectionContainer = styled.div`
   height: 100vh;
@@ -176,11 +176,11 @@ function Historia() {
         
           <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION1</InfoTitle>
-              <p> SECCION1  Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Taoísmo</InfoTitle>
+              <p> El taoísmo es una antigua tradición filosófica y religiosa que se originó en la antigua China. Basado en las enseñanzas del Dao De Jing, escrito por Laozi, el taoísmo busca vivir en armonía con el Tao, que se traduce como "el Camino" o "la Vía". En el taoísmo, se enfatiza la importancia de fluir con el curso natural de la vida, en lugar de resistirse a él. Se promueve la idea de dejar que las cosas se desarrollen sin esfuerzo y de vivir en equilibrio con la naturaleza. La meditación, la práctica de la atención plena y la cultivación del qi (energía vital) son parte integral de la tradición taoísta. Además, el taoísmo ha influido en otras áreas de la cultura china, como la medicina tradicional china, la poesía y la pintura, y ha dejado un legado duradero en la espiritualidad y el pensamiento filosófico de China y más allá.</p>
             </InfoText>
             <AdditionalContent>
-            <iframe title="Chinese Candlestick-Freepoly.org" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/e34a5a581e2143f9bdda0431ce53ed59/embed"> </iframe> 
+              <iframe title="temple" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/b82703c3c0f940bc84901a004e41c6ee/embed"> </iframe>
               {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
             </AdditionalContent>
           </InfoContainer>
@@ -190,11 +190,12 @@ function Historia() {
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#e1e1e1' }}>
         <InfoContainer >
         <AdditionalContent>
+              <iframe title="Buda" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/f3217a6ac49b4c4a995e41a7b8165383/embed"> </iframe>
               {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
             </AdditionalContent>
             <InfoText>
-            <InfoTitle>SECCION2</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Budismo</InfoTitle>
+              <p>El budismo es una antigua tradición espiritual que se originó en la India y se extendió por toda Asia, incluyendo la antigua China. Fundado por Siddhartha Gautama, conocido como Buda, el budismo se basa en las Cuatro Nobles Verdades y el Noble Óctuple Sendero. El budismo busca alcanzar la iluminación y liberación del sufrimiento al comprender y superar el apego y el deseo. Se enfoca en la práctica de la meditación, la compasión y la búsqueda de la sabiduría. En la antigua China, el budismo se integró con las tradiciones religiosas y filosóficas existentes, como el taoísmo y el confucianismo, y se desarrollaron diferentes escuelas y corrientes de pensamiento budista. El budismo ha tenido una profunda influencia en la espiritualidad, la cultura, el arte y la ética en la antigua China y en el mundo en general.</p>
             </InfoText>
            
           </InfoContainer>

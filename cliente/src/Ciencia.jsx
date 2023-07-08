@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import styled from 'styled-components';
-import backgroundImage2 from "./background1.jpg"
+import backgroundImage2 from "./background7.jpeg"
 
 const SectionContainer = styled.div`
   height: 100vh;
@@ -15,10 +15,11 @@ const InfoContainer = styled.div`
   display: inline-flex;
   align-items: center;
   padding: 0px;
-  
   background-color:#889FA5;
   flex: 1;
-  
+  background-image: url(${backgroundImage2});
+  background-size: cover;
+  background-repeat: no-repeat;
   justify-content: flex-start; /* Alineación a la izquierda */
 `;
 
@@ -33,13 +34,13 @@ const InfoText = styled.div`
   font-family: "Montserrat", sans-serif;
   font-weight: sans-serif;
   border-radius: 35px;
-  background-color: rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(100px);
 `;
 
 const InfoTitle = styled.h2`
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -49,11 +50,8 @@ const InfoTitle = styled.h2`
 `;
 
 const AdditionalContent = styled.div`
-width: 300px;
-padding: 25px;
-height: 300px;
-background-color: #ffffff;
 
+padding: 25px;
 flex: 1;
 margin-left: 20px;
 margin-right: 20px;
@@ -179,10 +177,13 @@ function Historia() {
         
           <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION1</InfoTitle>
-              <p> SECCION1  Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Invenciones</InfoTitle>
+              <p> La civilización china ha realizado numerosos aportes significativos a la ciencia a lo largo de su historia. Algunos de los logros más destacados incluyen la invención del papel durante la dinastía Han, lo cual revolucionó la escritura y la difusión del conocimiento en todo el mundo. Asimismo, la invención de la brújula magnética en la misma época permitió la navegación precisa y fue un hito importante en la exploración y el comercio marítimo.
+Otro importante aporte chino fue la descubierta de la pólvora en el siglo IX. Aunque inicialmente se utilizaba para fines pirotécnicos y ceremoniales, su aplicación en la guerra revolucionó los métodos militares en todo el mundo. La medicina tradicional china también ha dejado su huella con la acupuntura, una práctica que ha demostrado efectividad en ciertos trastornos y afecciones, y que ha sido practicada durante miles de años.
+La antigua China también realizó importantes avances en matemáticas. Introdujeron el sistema decimal, el álgebra y la geometría, además de contribuir a la teoría de los números. Asimismo, los chinos inventaron una forma temprana de impresión con bloques de madera durante la dinastía Tang, lo que permitió una reproducción más rápida y precisa de textos.</p>
             </InfoText>
             <AdditionalContent>
+              <iframe title="Still Life" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/50f7c8ca06564289bcf9b2340816a910/embed"> </iframe>
               {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
             </AdditionalContent>
           </InfoContainer>
@@ -192,11 +193,14 @@ function Historia() {
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#e1e1e1' }}>
         <InfoContainer >
         <AdditionalContent>
+              <iframe title="Barrels GunPowder TNT" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/4a01ed9ab9904c8ab12b301ad7b28da4/embed"> </iframe>
               {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
             </AdditionalContent>
             <InfoText>
-            <InfoTitle>SECCION2</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Pólvora</InfoTitle>
+              <p>En un principio, la pólvora fue utilizada con fines pirotécnicos y ceremoniales, en festividades y celebraciones. Sin embargo, su verdadero potencial se reveló cuando se empezó a utilizar con fines militares. La pólvora permitió el desarrollo de armas de guerra nunca antes vistas, como los cohetes y los cañones, que cambiaron para siempre los métodos de combate.
+El uso de la pólvora en la guerra fue un factor determinante en muchas batallas y conflictos posteriores. Los ejércitos chinos utilizaban cohetes propulsados por pólvora para lanzar proyectiles explosivos sobre sus enemigos, lo que les otorgaba una ventaja significativa en el campo de batalla. Además, la introducción de cañones de pólvora permitió a los chinos romper las defensas fortificadas de sus adversarios, revolucionando las tácticas y estrategias militares.
+La invención de la pólvora china tuvo un impacto trascendental en todo el mundo. A medida que se difundía a través de las rutas comerciales, la pólvora llegó a otras civilizaciones y fue adoptada en diferentes formas y aplicaciones. Su influencia se puede ver en el desarrollo de la artillería, la minería, la pirotecnia y la tecnología en general.</p>
             </InfoText>
            
           </InfoContainer>
