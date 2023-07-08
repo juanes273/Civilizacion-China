@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import styled from 'styled-components';
-import backgroundImage2 from "./background2.jpg"
+import backgroundImage2 from "./background2.jpeg"
 
 const SectionContainer = styled.div`
   height: 100vh;
