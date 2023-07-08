@@ -212,35 +212,42 @@ function Historia() {
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
         <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION3</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
-              <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
-            </AdditionalContent>
-            
+            <InfoTitle>Dinastía Qin y la unificación de China</InfoTitle>
+              <p>
+              La dinastía Qin, gobernada por el emperador Qin Shi Huang, fue crucial para la unificación de China en el siglo III a.C. Durante esta época, se construyeron importantes proyectos, como la Gran Muralla China y el Ejército de Terracota. Explorar esta dinastía proporciona una visión fascinante de la formación del imperio chino y los logros culturales y arquitectónicos.
+
+              </p>
+              
             </InfoText>
+            <AdditionalContent>
+              <iframe title="Statuette Qin" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/c529401f6ecf4401ad3573247f9434ea/embed"> </iframe>
+            </AdditionalContent>
             
           </InfoContainer>
         </SectionContainer>
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
         <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION4</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>El camino de seda</InfoTitle>
+              <p>
+              La antigua China desempeñó un papel crucial en el desarrollo y la expansión de la Ruta de la Seda, una red de rutas comerciales que conectaba a China con Europa y África. Esta ruta no solo facilitaba el comercio de bienes y productos, sino también el intercambio cultural, tecnológico y religioso entre las civilizaciones. Explorar la Ruta de la Seda brinda una visión amplia de las relaciones internacionales y el intercambio global en la antigua China.
+              </p>
             </InfoText>
             <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
+            <iframe title="Horse Sculpture 1660 AD w/3 LOD - Nepal Heritage" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/38f3f92cd27048fdaceb694d66615ddd/embed"> </iframe> 
             </AdditionalContent>
           </InfoContainer>
         </SectionContainer>
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
         <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION5</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>La Dinastía Zhou</InfoTitle>
+              <p>
+              La Dinastía Zhou fue una de las más importantes y duraderas en la antigua civilización china. Puedes explorar temas como el establecimiento y la organización del sistema feudal durante este período, el desarrollo de la filosofía china y el surgimiento de grandes pensadores como Confucio y Laozi, y los cambios políticos y sociales que llevaron al colapso de la dinastía.
+              </p>
             </InfoText>
             <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
+            <iframe title="Zun wine vessel, 10th C BCE" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/40e4c669e4794bc3a9b65c36cac40379/embed"> </iframe> 
             </AdditionalContent>
           </InfoContainer>
         </SectionContainer>
