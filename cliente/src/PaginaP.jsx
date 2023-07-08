@@ -3,14 +3,17 @@ import { Link, BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import styled, { keyframes } from 'styled-components';
 import Index2 from "./index2";
 import backgroundImage1 from "./background1.jpg"
-import backgroundImage2 from "./background2.png"
+import backgroundImage2 from "./backgroundhome.jpg"
+import backgroundImage3 from "./wallpaperhome3.jpg"
+import backgroundImage4 from "./backgrounhome4.jpg"
 import { render } from "@react-three/fiber";
-import logo from "./assets/img/logo.png"
+import logo from "./logo.png"
 
 // Componente Principal
 function Principal() {
   return (
     <div>
+      
        <Navbar>
         <LogoButton>
           <a  href="/"  rel="noopener noreferrer" >
@@ -55,10 +58,10 @@ const change = keyframes`
     background-image: url(${backgroundImage2});
   }
   40% {
-    background-image: url(${backgroundImage1});
+    background-image: url(${backgroundImage3});
   }
   60% {
-    background-image: url(${backgroundImage2});
+    background-image: url(${backgroundImage4});
   }
   80% {
     background-image: url(${backgroundImage1});
@@ -70,7 +73,7 @@ const change = keyframes`
 
 
 const BackgroundImage = styled.div`
-  animation: ${change} 20s infinite;
+  animation: ${change} 30s infinite;
 
   display: flex;
   justify-content: center;
@@ -101,11 +104,14 @@ const LogoButton = styled.button`
   border: none;
   cursor: pointer;
   margin-left: 10px;
+  
 `;
 
 const LogoImage = styled.img`
-  width: 50px; /* Ajusta el tamaño según tus necesidades */
+  width: 300px; /* Ajusta el tamaño según tus necesidades */
   height: auto; /* Ajusta el tamaño según tus necesidades */
+  background-image: url(${logo});
+  background-size: cover;
 `;
 
 const NavButtonContainer = styled.div`
@@ -122,6 +128,8 @@ const NavButton = styled.button`
   margin: 0 10px;
   padding: 20px;
   cursor: pointer;
+  font-weight: bold;
+  font-family: "Montserrat",sans-serif;
 `;
 
 
@@ -192,8 +200,14 @@ const Button = styled.button`
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
  
- 
+&:hover {
+  background-image: url("ruta_del_gif_hover.gif");
+
+}
 &:after {
   background-clip: padding-box;
   background-color: #628281;

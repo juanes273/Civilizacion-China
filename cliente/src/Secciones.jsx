@@ -3,7 +3,7 @@ import { Link, BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import styled from 'styled-components';
 import Index2 from "./index2";
 import backgroundImage1 from "./background1.jpg"
-import backgroundImage2 from "./background2.png"
+import backgroundImage2 from "./backgroundhome.jpg"
 import { render } from "@react-three/fiber";
 import logo from "./assets/img/logo.png"
 

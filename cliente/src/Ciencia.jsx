@@ -178,9 +178,19 @@ function Historia() {
           <InfoContainer >
             <InfoText>
             <InfoTitle>Invenciones</InfoTitle>
-              <p> La civilización china ha realizado numerosos aportes significativos a la ciencia a lo largo de su historia. Algunos de los logros más destacados incluyen la invención del papel durante la dinastía Han, lo cual revolucionó la escritura y la difusión del conocimiento en todo el mundo. Asimismo, la invención de la brújula magnética en la misma época permitió la navegación precisa y fue un hito importante en la exploración y el comercio marítimo.
-Otro importante aporte chino fue la descubierta de la pólvora en el siglo IX. Aunque inicialmente se utilizaba para fines pirotécnicos y ceremoniales, su aplicación en la guerra revolucionó los métodos militares en todo el mundo. La medicina tradicional china también ha dejado su huella con la acupuntura, una práctica que ha demostrado efectividad en ciertos trastornos y afecciones, y que ha sido practicada durante miles de años.
-La antigua China también realizó importantes avances en matemáticas. Introdujeron el sistema decimal, el álgebra y la geometría, además de contribuir a la teoría de los números. Asimismo, los chinos inventaron una forma temprana de impresión con bloques de madera durante la dinastía Tang, lo que permitió una reproducción más rápida y precisa de textos.</p>
+              <p> La civilización china ha realizado numerosos aportes significativos a la ciencia a lo largo de su historia. Algunos de ellos incluyen:
+
+La invención del papel durante la dinastía Han, revolucionando la escritura y la difusión del conocimiento en todo el mundo.
+
+La invención de la brújula magnética en la misma época, permitiendo la navegación precisa y siendo un hito importante en la exploración y el comercio marítimo.
+
+El descubrimiento de la pólvora en el siglo IX, que inicialmente se utilizaba para fines pirotécnicos y ceremoniales, pero posteriormente revolucionó los métodos militares a nivel mundial.
+
+La medicina tradicional china, con prácticas como la acupuntura, que ha demostrado efectividad en ciertos trastornos y afecciones a lo largo de miles de años.
+
+Los avances en matemáticas, incluyendo la introducción del sistema decimal, el álgebra, la geometría y las contribuciones a la teoría de los números.
+
+La invención de una forma temprana de impresión con bloques de madera durante la dinastía Tang, permitiendo una reproducción más rápida y precisa de textos.</p>
             </InfoText>
             <AdditionalContent>
               <iframe title="Still Life" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/50f7c8ca06564289bcf9b2340816a910/embed"> </iframe>
@@ -198,9 +208,9 @@ La antigua China también realizó importantes avances en matemáticas. Introduj
             </AdditionalContent>
             <InfoText>
             <InfoTitle>Pólvora</InfoTitle>
-              <p>En un principio, la pólvora fue utilizada con fines pirotécnicos y ceremoniales, en festividades y celebraciones. Sin embargo, su verdadero potencial se reveló cuando se empezó a utilizar con fines militares. La pólvora permitió el desarrollo de armas de guerra nunca antes vistas, como los cohetes y los cañones, que cambiaron para siempre los métodos de combate.
-El uso de la pólvora en la guerra fue un factor determinante en muchas batallas y conflictos posteriores. Los ejércitos chinos utilizaban cohetes propulsados por pólvora para lanzar proyectiles explosivos sobre sus enemigos, lo que les otorgaba una ventaja significativa en el campo de batalla. Además, la introducción de cañones de pólvora permitió a los chinos romper las defensas fortificadas de sus adversarios, revolucionando las tácticas y estrategias militares.
-La invención de la pólvora china tuvo un impacto trascendental en todo el mundo. A medida que se difundía a través de las rutas comerciales, la pólvora llegó a otras civilizaciones y fue adoptada en diferentes formas y aplicaciones. Su influencia se puede ver en el desarrollo de la artillería, la minería, la pirotecnia y la tecnología en general.</p>
+              <p>La pólvora tuvo un origen inicialmente pirotécnico y ceremonial, utilizada en festividades y celebraciones. No obstante, su verdadero potencial se descubrió cuando empezó a emplearse con fines militares. Esto permitió el desarrollo de armas de guerra innovadoras, como cohetes y cañones, que transformaron los métodos de combate de manera permanente.
+
+El uso de la pólvora en la guerra resultó crucial en numerosas batallas y conflictos posteriores. Los ejércitos chinos empleaban cohetes propulsados por pólvora para lanzar proyectiles explosivos contra sus enemigos, otorgándoles una ventaja significativa en el campo de batalla. Asimismo, la introducción de los cañones de pólvora permitió a los chinos romper las defensas fortificadas de sus adversarios, revolucionando las tácticas y estrategias militares.</p>
             </InfoText>
            
           </InfoContainer>

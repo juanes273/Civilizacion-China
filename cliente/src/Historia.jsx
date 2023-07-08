@@ -178,14 +178,8 @@ function Historia() {
           <InfoContainer >
             <InfoText>
             <InfoTitle>Historia</InfoTitle>
-              <p> La antigua civilización china tiene una historia rica y fascinante que se extiende a lo largo de miles de años. Desde sus inicios en el valle del río Amarillo alrededor del tercer milenio antes de Cristo, hasta la formación de un imperio unificado bajo la dinastía Qin en el siglo III antes de Cristo, China experimentó una serie de cambios culturales, políticos y sociales.
-
-                Durante los primeros años de su historia, China fue testigo del desarrollo de ciudades, la invención de la escritura china y la expansión de los reinos feudales. Durante el periodo conocido como la dinastía Zhou, que abarcó desde el siglo XI hasta el siglo III antes de Cristo, se estableció un sistema político basado en la idea del "Mandato del Cielo", que sostenía que el emperador gobernaba con el respaldo divino.
-
-                La Gran Muralla China, una de las construcciones más emblemáticas de la historia china, comenzó a construirse durante la dinastía Qin. Esta dinastía también fue famosa por unificar China bajo un solo gobierno centralizado y establecer el sistema de escritura, medidas y monedas estándar.
-
-                En los siglos siguientes, China experimentó un período de expansión y prosperidad bajo las dinastías Han, Tang y Song. Durante estas dinastías, se llevaron a cabo grandes avances en la tecnología, la agricultura y las artes. Fue durante la dinastía Han que China estableció la Ruta de la Seda, una red comercial que conectaba China con el Medio Oriente y Europa, facilitando el intercambio cultural y económico.
-
+              <p> 
+              La antigua civilización china tiene una historia fascinante que abarca miles de años. Experimentó cambios políticos, culturales y sociales, desde sus inicios en el valle del río Amarillo hasta la unificación bajo la dinastía Qin. Durante las dinastías Han, Tang y Song, hubo avances tecnológicos, prosperidad y establecimiento de la Ruta de la Seda, que facilitó el intercambio comercial y cultural. Destacan la construcción de la Gran Muralla China y el sistema político basado en el "Mandato del Cielo".
               </p>
             </InfoText>
             <AdditionalContent>
