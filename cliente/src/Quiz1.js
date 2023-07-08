@@ -46,7 +46,7 @@ export default function Quiz1({ onSceneChange }) {
 
         ["¿En qué año se descubrieron los soldados de Terracota en Xi'an, China?", ["1988", "2001", "1974"], botonC],
       ]);
-      shuffledTexts.splice(5, 0, ["¡Has respondido correctamente todas las preguntas!\n\n\n Mira atras"]);
+      shuffledTexts.splice(5, 0, ["¡Has respondido correctamente todas las preguntas!"]);
       return shuffledTexts.slice(0, 6);
     } else if (categoria == "cultura") {
       const shuffledTexts = shuffle([
@@ -59,7 +59,7 @@ export default function Quiz1({ onSceneChange }) {
         ["¿Cuál de las siguientes filosofías tuvo una gran influencia en la sociedad china antigua y enfatizaba la importancia de la ética y la moralidad?", ["Hedonismo", "Existencialismo", "Confucianismo"], botonC],
 
       ]);
-      shuffledTexts.splice(5, 0, ["¡Has respondido correctamente todas las preguntas!\n\n\n Mira atras"]);
+      shuffledTexts.splice(5, 0, ["¡Has respondido correctamente todas las preguntas!"]);
       return shuffledTexts.slice(0, 6);
     } else if (categoria == "religion") {
       const shuffledTexts = shuffle([
@@ -68,7 +68,7 @@ export default function Quiz1({ onSceneChange }) {
         ["¿Quién es el fundador del budismo?", ["Buda", "Confucio", "Laozi"], botonA],
         ["¿Cuál de las siguientes enseñanzas budistas busca alcanzar la liberación del sufrimiento?", ["Las Cuatro Nobles Verdades", "Los Diez Mandamientos", "El Tao Te Ching"], botonA],
       ]);
-      shuffledTexts.splice(5, 0, ["¡Has respondido correctamente todas las preguntas!\n\n\n Mira atras"]);
+      shuffledTexts.splice(5, 0, ["¡Has respondido correctamente todas las preguntas!"]);
       return shuffledTexts.slice(0, 6);
     } else if (categoria == "ciencia") {
       const shuffledTexts = shuffle([
@@ -77,7 +77,7 @@ export default function Quiz1({ onSceneChange }) {
         ["¿Qué aplicación inicial tenía la pólvora en la antigua China?", ["Uso militar", "Uso médico", "Uso pirotécnico y ceremonial"], botonC],
         ["¿Qué impacto tuvo la introducción de la pólvora en la guerra?", ["No tuvo un impacto significativo", "Fue utilizada solo en festividades y celebraciones", "Revolucionó los métodos de combate"], botonC],
       ]);
-      shuffledTexts.splice(5, 0, ["¡Has respondido correctamente todas las preguntas!\n\n\n Mira atras"]);
+      shuffledTexts.splice(5, 0, ["¡Has respondido correctamente todas las preguntas!"]);
       return shuffledTexts.slice(0, 6);
     }
   });
@@ -242,14 +242,8 @@ export default function Quiz1({ onSceneChange }) {
 
       {currentIndex === 4 && (
         <mesh>
-          <Text fontSize={2} color="black" position={[97, 22, 0]} maxWidth={35} textAlign="center" rotation={[0, -Math.PI * 0.5, 0]}>
-            <mesh position={[0, 0, -0.01]}>
-              <boxGeometry args={[40, 15, 0.01]} />
-              <meshBasicMaterial color="white" opacity={0.8} />
-            </mesh>
-            Dale click a la estrella para regresar al inicio
-          </Text>
-          <mesh onClick={goBack} scale={0.03} position={[90, 3, 0]} ref={estrellaRef}>
+          
+          <mesh onClick={goBack} scale={0.03} position={[20, 3, 0]} ref={estrellaRef}>
             <Estrella />
           </mesh>
         </mesh>

@@ -40,6 +40,13 @@ export default function Quiz({ onSceneChange }) {
     }, 200);
     
   }
+  const handleClickBack = () => {
+    botonBack.current.position.x = 7
+    setTimeout(() => {
+      botonBack.current.position.x = 8;
+      window.history.back();
+    }, 200);
+  };
 
   return (
     <group>
@@ -119,8 +126,20 @@ export default function Quiz({ onSceneChange }) {
               >
             </Text>
       </mesh>
-      <mesh  position={[12,9.56,-18]} rotation={[0, -Math.PI*0.25, 0] }>
+      <mesh  position={[12,9.56,-18]} rotation={[0, -Math.PI*0.35, 0] }>
         <TerracotaSoldier scale={5}/>
+      </mesh>
+      <mesh ref={botonBack} onClick={handleClickBack} position={[8, 5,16]} rotation={[0, Math.PI * 0.5, 0]}>
+        <boxGeometry args={[7, 3, 2]} />
+        <meshStandardMaterial color={"pink"} />
+        <Text
+          fontSize={1.5}
+          color="black"
+          position={[0, 0, 1.01]}
+          rotation={[0, 0, 0]}
+        >
+          Regresar
+        </Text>
       </mesh>
     </group>
   );
