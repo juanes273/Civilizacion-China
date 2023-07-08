@@ -219,35 +219,41 @@ El uso de la pólvora en la guerra resultó crucial en numerosas batallas y conf
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
         <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION3</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
-              <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
-            </AdditionalContent>
+            <InfoTitle>Brújula</InfoTitle>
+              <p>La brújula china, también conocida como la brújula de aguja magnética, es una invención antigua que se remonta al siglo II a.C. Su desarrollo en China marcó un hito en la navegación y tuvo un impacto significativo en la exploración y el comercio marítimo. La brújula consistía en una aguja magnetizada colocada en un plato o recipiente flotante lleno de agua. La aguja apuntaba siempre hacia el norte magnético, lo que permitía a los marineros y exploradores orientarse con mayor precisión en alta mar.
+
+La brújula china revolucionó la navegación, ya que los marineros podían determinar su rumbo incluso en días nublados o sin referencias visuales. Este instrumento permitió a los chinos aventurarse más allá de las rutas costeras conocidas y explorar nuevas tierras. Además, la brújula también tuvo un impacto en el comercio, ya que facilitó el establecimiento de rutas marítimas más eficientes y seguras. El conocimiento de la brújula se extendió gradualmente por todo el mundo, y su adopción en Europa y otras regiones transformó por completo la navegación y la exploración marítima a nivel global. La brújula china, con su ingeniosa utilización de las propiedades magnéticas, es un testimonio del ingenio y la capacidad tecnológica de la antigua civilización china.</p>
+             
             
             </InfoText>
-            
+            <AdditionalContent> <iframe title="Ancient Compass" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/90884ca431d0434bbcba60c93ba9fb5a/embed"> </iframe></AdditionalContent>
           </InfoContainer>
         </SectionContainer>
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
         <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION4</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Seda</InfoTitle>
+              <p>
+              La seda es una de las invenciones más emblemáticas de la antigua China. Los chinos desarrollaron técnicas avanzadas para criar gusanos de seda y tejer finas hebras de seda a partir de sus capullos. La seda china se convirtió en un producto altamente valorado y codiciado en todo el mundo antiguo, y su producción y comercio desempeñaron un papel importante en la economía y el intercambio cultural de China.
+              </p>
             </InfoText>
             <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
+            <iframe title="Crysede silk robe" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/283687e418a8404399ea9ea72cf5e8bd/embed"> </iframe>
             </AdditionalContent>
           </InfoContainer>
         </SectionContainer>
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
         <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION5</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Lámparas de papel</InfoTitle>
+              <p>
+              Las lámparas de papel son una antigua invención china que se remonta a más de dos mil años atrás. Estas lámparas, también conocidas como faroles de papel, eran hechas a mano utilizando papel de arroz o seda y un armazón de bambú. Eran populares tanto en las áreas urbanas como en las rurales de la antigua China y se utilizaban en festividades, celebraciones y eventos ceremoniales.
+
+Las lámparas de papel chinas eran verdaderas obras de arte, con diseños elaborados y colores vibrantes. Los artesanos chinos utilizaban diversas técnicas para decorar las lámparas, como la pintura a mano, la caligrafía y el recorte de papel. Además de su belleza estética, estas lámparas también eran funcionales, ya que se colocaban velas o lámparas de aceite en su interior para proporcionar iluminación. Las lámparas de papel chinas no solo eran una fuente de luz, sino que también tenían un significado simbólico, representando la esperanza, la prosperidad y la buena fortuna.
+              </p>
             </InfoText>
             <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
+            <iframe title="Asian Chinese Paper Lucky Lantern New Year" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/6a9670edf25943b0afb469556e8966b8/embed"> </iframe>
             </AdditionalContent>
           </InfoContainer>
         </SectionContainer>
