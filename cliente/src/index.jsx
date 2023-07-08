@@ -5,6 +5,7 @@ import Form from './Form'
 import 'bootstrap/dist/css/bootstrap.css';
 import Rutas from './Router';
 
+
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
 root.render(
