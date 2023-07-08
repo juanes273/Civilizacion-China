@@ -207,35 +207,41 @@ La música también ocupaba un lugar destacado en la cultura antigua china. Los 
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
         <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION3</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
-              <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
-            </AdditionalContent>
+            <InfoTitle>Vestimenta y moda</InfoTitle>
+              <p>
+              La vestimenta en la antigua China era un reflejo de la cultura y el estatus social. Puedes investigar sobre los diferentes estilos de vestimenta utilizados en diferentes períodos, como los trajes tradicionales de la dinastía Han o las túnicas largas de la dinastía Qing. También puedes explorar los materiales, colores y adornos utilizados en la moda china antigua, y cómo la vestimenta reflejaba la jerarquía social y las normas culturales.
+              </p>
+
             
-            </InfoText>
-            
-          </InfoContainer>
-        </SectionContainer>
-        <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
-        <InfoContainer >
-            <InfoText>
-            <InfoTitle>SECCION4</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
             </InfoText>
             <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
+            <iframe title="Ancient Chinese emperor Emperor of Qing Dynasty" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/bb744e86fbd648b882e9b40b09937c1a/embed"> </iframe> 
             </AdditionalContent>
           </InfoContainer>
         </SectionContainer>
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
         <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION5</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Gastronomía china</InfoTitle>
+              <p>
+              La antigua China tenía una rica tradición culinaria. Puedes investigar sobre los alimentos básicos utilizados en la cocina china antigua, como el arroz y el trigo, así como las técnicas de cocción y los condimentos utilizados. También puedes explorar la importancia de la alimentación en la cultura china, como los banquetes ceremoniales y los principios de equilibrio y armonía en la dieta según la medicina tradicional china.
+              </p>
             </InfoText>
             <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
+            <iframe title="Asia food_steamed port dumplings" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/a27e0aba595f44e98a4f766cae1a81c6/embed"> </iframe>
+            </AdditionalContent>
+          </InfoContainer>
+        </SectionContainer>
+        <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
+        <InfoContainer >
+            <InfoText>
+            <InfoTitle>Cerámica Antigua </InfoTitle>
+              <p>
+              La cerámica china tiene una rica y distinguida historia que se remonta a miles de años. Es considerada una de las formas de arte más importantes y apreciadas de la cultura china. Desde las dinastías antiguas hasta la actualidad, los ceramistas chinos han demostrado una habilidad excepcional en la creación de piezas de cerámica bellamente elaboradas y decoradas. La porcelana china, conocida por su delicadeza, translucidez y esmaltes vibrantes, ha cautivado a personas de todo el mundo. La cerámica china no solo se valora por su estética, sino también por su funcionalidad, ya que ha sido utilizada a lo largo de los siglos para una amplia gama de propósitos, desde vajillas y jarrones hasta estatuillas y objetos rituales. La cerámica china es un testigo tangible de la destreza artística y la herencia cultural de una civilización milenaria.
+              </p>
+            </InfoText>
+            <AdditionalContent>
+            <iframe title="Chinese porcelain" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/52949d7ce0cc42bc8915d425198ecc94/embed"> </iframe>
             </AdditionalContent>
           </InfoContainer>
         </SectionContainer>
