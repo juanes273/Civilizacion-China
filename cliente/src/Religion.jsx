@@ -204,35 +204,37 @@ function Historia() {
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
         <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION3</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
-              <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
-            </AdditionalContent>
-            
+            <InfoTitle>Confucianismo</InfoTitle>
+              <p> El confucianismo es una filosofía y una forma de vida que se basa en los principios y enseñanzas del pensador chino Confucio. Puedes investigar sobre las enseñanzas confucianas, como la importancia de las relaciones familiares, la virtud personal y el cultivo moral. También puedes explorar cómo el confucianismo influyó en la ética y la gobernabilidad en la antigua China.</p>
+    
             </InfoText>
             
-          </InfoContainer>
-        </SectionContainer>
-        <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
-        <InfoContainer >
-            <InfoText>
-            <InfoTitle>SECCION4</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
-            </InfoText>
             <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
+            <iframe title="Nyc confucious Statue" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/8b566deb25ef457db4cfa041033e6a13/embed"> </iframe>
             </AdditionalContent>
           </InfoContainer>
         </SectionContainer>
         <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
         <InfoContainer >
             <InfoText>
-            <InfoTitle>SECCION5</InfoTitle>
-              <p>SECCION1 Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en disLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demosteño gráfico en demostm ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto finaLorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina</p>
+            <InfoTitle>Religión popular</InfoTitle>
+              <p>Además de las tradiciones filosóficas y el budismo, la antigua China también tenía una amplia gama de prácticas religiosas populares. Puedes explorar el culto a los antepasados y la adoración de los dioses, la creencia en espíritus y deidades locales, y las prácticas adivinatorias y rituales para obtener buena fortuna y protección.</p>
             </InfoText>
             <AdditionalContent>
-              {/* Aquí puedes agregar cualquier contenido adicional que desees mostrar al lado del texto */}
+            <iframe title="Chinese dragon (DARII)" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/5a156cfbcb7a4a9c827f2ab91a12f67e/embed"> </iframe> 
+            </AdditionalContent>
+          </InfoContainer>
+        </SectionContainer>
+        <SectionContainer ref={(ref) => sectionRefs.current.push(ref)} style={{ backgroundColor: '#d1d1d1' }}>
+        <InfoContainer >
+            <InfoText>
+            <InfoTitle>Legalismo</InfoTitle>
+              <p>
+              Aunque no se considera una religión en el sentido estricto, el legalismo fue una importante escuela de pensamiento en la antigua China que tenía una fuerte influencia en la política y el gobierno. Puedes investigar sobre los principios y las enseñanzas del legalismo, que se enfocaban en el poder y la autoridad del estado, la necesidad de leyes estrictas y el uso del castigo como medio de control social.
+              </p>
+            </InfoText>
+            <AdditionalContent>
+            <iframe title="Chinese Temple" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="850" height="460" src="https://sketchfab.com/models/01c6a525a8144693b1eb2446f761051c/embed"> </iframe> 
             </AdditionalContent>
           </InfoContainer>
         </SectionContainer>
