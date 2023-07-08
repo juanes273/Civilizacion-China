@@ -40,11 +40,12 @@ function LoginPage() {
       setIsLoading(true);
       const response = await axios.post('https://civilizacion-china.onrender.com/api/login', { email, password });
       setMessage(response.data.message);
+      localStorage.setItem('isLoggedIn', 'true');
+      localStorage.setItem('username', response.data.username);
+      
       setIsLoggedIn(true);
       setUsername(response.data.username);
-      console.log(isLoggedIn)
-      console.log(username)
-      navigate('/principal');
+      navigate('/');
     } catch (error) {
       console.log(error);
     } finally {

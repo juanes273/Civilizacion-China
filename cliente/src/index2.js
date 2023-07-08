@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import Experience from './Experience';
 
+
 function Index2() {
   return (
     <Canvas
