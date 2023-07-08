@@ -7,10 +7,12 @@ import LoginPage from './Form';
 import MiComponente from './prueba';
 import Index2 from './index2';
 import RegisterPage from './Register_form';
+import { AuthProvider } from './authContext';
 
 function Rutas() {
   return (
     <Router>
+      <AuthProvider>
       <Routes>
         <Route path="/" element={<MiComponente />} />
         <Route path="/principal" element={<Principal />} />
@@ -18,6 +20,7 @@ function Rutas() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
+      </AuthProvider>
     </Router>
   );
 }

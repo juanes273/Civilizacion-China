@@ -3,15 +3,23 @@ import styled from "styled-components";
 import backgroundImage from "./background.jpg";
 import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom';
 import TerracotaSoldier from './TerracotaSoldier';
+import { useContext } from 'react';
+import { AuthContext } from './authContext';
 
 function Principal() {
   const location = useLocation();
   const navigate = useNavigate();
+  const { isLoggedIn, username, setIsLoggedIn } = useContext(AuthContext);
 
   const handleClick = () => {
     // Redirecciona al componente deseado
     navigate('/');
   };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false); 
+  };
+
 
   return (
     <Wrapper>
@@ -19,9 +27,13 @@ function Principal() {
       <Navbar>
         <NavLogo href="/">Logo</NavLogo>
         <NavLinks>
-          <StyledNavLink exact to="/">Inicio</StyledNavLink>
+          <StyledNavLink exact="True" to="/">Inicio</StyledNavLink>
           <StyledNavLink to="/tour">Tour</StyledNavLink>
-          <StyledNavLink to="/login">Login</StyledNavLink>
+          {isLoggedIn ? (
+            <StyledNavLink to="/principal" onClick={handleLogout}>Logout {username}</StyledNavLink>
+          ) : (
+            <StyledNavLink to="/login">Login</StyledNavLink>
+          )}
         </NavLinks>
       </Navbar>
       <Title>La gran Muralla china</Title>

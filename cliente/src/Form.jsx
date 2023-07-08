@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect, useContext } from 'react';
+import { BrowserRouter as Router, Route, Routes, useNavigate, Link} from 'react-router-dom';
 import axios from 'axios';
-import Index2 from './index2';
-import Principal from './PaginaP.jsx';
+import { AuthContext } from './authContext';
 
 import {
   MDBBtn,
@@ -23,8 +22,9 @@ function LoginPage() {
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [loadingText, setLoadingText] = useState('Cargando');
-  const [username, setUsername] = useState('');
   const navigate = useNavigate();
+  const authContext = useContext(AuthContext);
+  const { isLoggedIn, setIsLoggedIn, username, setUsername } = authContext;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -38,10 +38,13 @@ function LoginPage() {
     e.preventDefault();
     try {
       setIsLoading(true);
-      const response = await axios.post('http://localhost:5000/api/login', { email, password });
+      const response = await axios.post('https://civilizacion-china.onrender.com/api/login', { email, password });
       setMessage(response.data.message);
-      setUsername(response.data.username); // Actualiza el estado con el nombre de usuario
-      //navigate('/principal');
+      setIsLoggedIn(true);
+      setUsername(response.data.username);
+      console.log(isLoggedIn)
+      console.log(username)
+      navigate('/principal');
     } catch (error) {
       console.log(error);
     } finally {
@@ -65,13 +68,13 @@ function LoginPage() {
 
           <div className='d-flex flex-column justify-content-center h-custom-2 w-75 pt-4'>
             <h3 className='fw-normal mb-3 ps-5 pb-3' style={{ letterSpacing: '1px' }}>
-              Log in
+              Ingresa
             </h3>
 
             <form onSubmit={handleSubmit}>
               <MDBInput
                 wrapperClass='mb-4 mx-5 w-100'
-                label='Email address'
+                label='Correo'
                 id='formControlLg'
                 type='email'
                 size='lg'
@@ -80,7 +83,7 @@ function LoginPage() {
               />
               <MDBInput
                 wrapperClass='mb-4 mx-5 w-100'
-                label='Password'
+                label='Contraseña'
                 id='formControlLg'
                 type='password'
                 size='lg'
@@ -89,9 +92,15 @@ function LoginPage() {
               />
 
               <MDBBtn className='mb-4 px-5 mx-5 w-100' color='info' size='lg' type='submit'>
-                Login
+                Ingresar
               </MDBBtn>
             </form>
+
+            <p className='small mb-5 pb-lg-3 ms-5'>
+              <Link to='/register' className='text-muted'>
+                No tienes una cuenta? Registrate
+              </Link>
+            </p>
 
             <p className='small mb-5 pb-lg-3 ms-5'>
             </p>
@@ -133,16 +142,6 @@ function LoginPage() {
           <p className="text-light ms-2">{loadingText}</p>
         </div>
       )}
-
-      {/* Ventana emergente */}
-      <MDBModal show={!!username} onHide={() => setUsername('')}>
-        <MDBModalHeader>
-          ¡Bienvenido, {username}!
-        </MDBModalHeader>
-        <MDBModalBody>
-          Has iniciado sesión exitosamente.
-        </MDBModalBody>
-      </MDBModal>
     </MDBContainer>
   );
 }

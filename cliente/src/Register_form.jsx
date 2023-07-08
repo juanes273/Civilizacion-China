@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 
 import {
@@ -14,6 +14,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 
 function RegisterPage() {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
@@ -33,7 +34,7 @@ function RegisterPage() {
     e.preventDefault();
     try {
       setIsLoading(true);
-      const response = await axios.post('https://civilizacion-china.onrender.com/api/register', { email, password });
+      const response = await axios.post('https://civilizacion-china.onrender.com/api/register', { name, email, password });
       setMessage(response.data.message);
       navigate('/principal');
     } catch (error) {
@@ -57,13 +58,22 @@ function RegisterPage() {
 
           <div className='d-flex flex-column justify-content-center h-custom-2 w-75 pt-4'>
             <h3 className='fw-normal mb-3 ps-5 pb-3' style={{ letterSpacing: '1px' }}>
-              Register
+              Registro
             </h3>
 
             <form onSubmit={handleSubmit}>
               <MDBInput
                 wrapperClass='mb-4 mx-5 w-100'
-                label='Email address'
+                label='Nombre'
+                id='formControlLg'
+                type='text'
+                size='lg'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <MDBInput
+                wrapperClass='mb-4 mx-5 w-100'
+                label='Correo'
                 id='formControlLg'
                 type='email'
                 size='lg'
@@ -72,7 +82,7 @@ function RegisterPage() {
               />
               <MDBInput
                 wrapperClass='mb-4 mx-5 w-100'
-                label='Password'
+                label='Contraseña'
                 id='formControlLg'
                 type='password'
                 size='lg'
@@ -81,14 +91,14 @@ function RegisterPage() {
               />
 
               <MDBBtn className='mb-4 px-5 mx-5 w-100' color='info' size='lg' type='submit'>
-                Register
+                Registrarse
               </MDBBtn>
             </form>
 
             <p className='small mb-5 pb-lg-3 ms-5'>
-              <a className='text-muted' href='#!'>
-                Already have an account? Login
-              </a>
+              <Link to='/login' className='text-muted'>
+                Ya tienes una cuenta? Ingresa aquí
+              </Link>
             </p>
           </div>
         </MDBCol>
