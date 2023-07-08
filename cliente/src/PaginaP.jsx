@@ -6,6 +6,7 @@ import backgroundImage1 from "./background1.jpg"
 import backgroundImage2 from "./backgroundhome.jpg"
 import backgroundImage3 from "./wallpaperhome3.jpg"
 import backgroundImage4 from "./backgrounhome4.jpg"
+
 import { render } from "@react-three/fiber";
 import logo from "./logo.png"
 
@@ -13,7 +14,7 @@ import logo from "./logo.png"
 function Principal() {
   return (
     <div>
-      
+
        <Navbar>
         <LogoButton>
           <a  href="/"  rel="noopener noreferrer" >

@@ -2,8 +2,11 @@ import React from "react";
 import { Link, BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import styled from 'styled-components';
 import Index2 from "./index2";
-import backgroundImage1 from "./background1.jpg"
+import backgroundImage1 from "./categoria_historia.jpg"
 import backgroundImage2 from "./backgroundhome.jpg"
+import backgroundImage3 from "./categoria_cultura.jpg"
+import backgroundImage4 from "./categoria_religion.jpg"
+import backgroundImage5 from "./categoria_ciencia.jpg"
 import { render } from "@react-three/fiber";
 import logo from "./assets/img/logo.png"
 
@@ -38,16 +41,17 @@ function Tourtemas() {
 
   const H1 = styled.button`
     padding: 16px;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     text-transform: uppercase;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     background-color: transparent;
-    color: #fff;
+    color: black;
+
     font-weight: bold;
     
-    font-family: "Montserrat",sans-serif;
+    font: small-caps bold  sans-serif;
     
   `;
 
@@ -64,17 +68,17 @@ function Tourtemas() {
           <H1>Historia</H1>
         </StyledLink>
       </Block>
-      <Block to="/cultura" backgroundImage={backgroundImage2}>
+      <Block to="/cultura" backgroundImage={backgroundImage3}>
         <StyledLink >
           <H1>Cultura</H1>
         </StyledLink>
       </Block>
-      <Block  to="/religion" backgroundImage={backgroundImage1}>
+      <Block  to="/religion"backgroundImage={backgroundImage4}>
         <StyledLink>
           <H1>Religion</H1>
         </StyledLink>
       </Block>
-      <Block to="/ciencia" backgroundImage={backgroundImage2}>
+      <Block to="/ciencia" backgroundImage={backgroundImage5}>
         <StyledLink >
           <H1>Ciencia</H1>
         </StyledLink>
