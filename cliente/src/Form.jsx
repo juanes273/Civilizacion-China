@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useNavigate, Link} from 'react-router-dom';
 import axios from 'axios';
 import { AuthContext } from './authContext';
 
@@ -95,6 +95,12 @@ function LoginPage() {
                 Ingresar
               </MDBBtn>
             </form>
+
+            <p className='small mb-5 pb-lg-3 ms-5'>
+              <Link to='/register' className='text-muted'>
+                No tienes una cuenta? Registrate
+              </Link>
+            </p>
 
             <p className='small mb-5 pb-lg-3 ms-5'>
             </p>

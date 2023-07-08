@@ -52,12 +52,17 @@ app.post('/api/login', async (req, res) => {
   try {
     // Buscamos al usuario por su correo electrónico
     const user = await User.findOne({ email });
+
+    // Verificar si se encontró un usuario con el correo electrónico proporcionado
     if (!user) {
       return res.status(400).json({ message: 'Credenciales inválidas (No user)' });
     }
 
+    // Verificar la contraseña utilizando bcrypt.compare dentro de una función async
+    const isPasswordCorrect = await bcrypt.compare(password, user.password);
+
     // Comparamos la contraseña ingresada con la almacenada en la base de datos
-    if (password !== user.password) {
+    if (!isPasswordCorrect) {
       return res.status(400).json({ message: 'Credenciales inválidas' });
     }
 
@@ -66,6 +71,7 @@ app.post('/api/login', async (req, res) => {
     res.status(500).json({ message: 'Error en el servidor' });
   }
 });
+
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
 
